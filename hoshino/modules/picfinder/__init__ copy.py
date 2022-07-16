@@ -20,7 +20,6 @@ if type(NICKNAME) == str:
 
 sv = Service('picfinder', help_=helptext)
 
-
 lmtd = DailyNumberLimiter(DAILY_LIMIT)
 logger = log.new_logger('image')
 
@@ -65,16 +64,16 @@ async def start_finder(bot, ev: CQEvent):
             file = m.data['file']
             url = m.data['url']
             if 'subType' in m.data:
-                sbtype = m.data['subType']
+                sbtype=m.data['subType']
             else:
-                sbtype = None
-            ret = 1
+                sbtype=None
+            ret=1
             break    
     if not ret:
         if pls.get_on_off_status(gid):
             if uid == pls.on[gid]:
                 pls.timeout[gid] = datetime.now()+timedelta(seconds=30)
-                await bot.finish(ev, f"您已经在搜图模式下啦！\n如想退出搜图模式请发送“谢谢星乃”~")
+                await bot.finish(ev, f"您已经在搜图模式下啦！\n如想退出搜图模式请发送“谢谢竹竹”~")
             else:
                 await bot.finish(ev, f"本群[CQ:at,qq={pls.on[gid]}]正在搜图，请耐心等待~")
         pls.turn_on(gid, uid)
@@ -179,27 +178,24 @@ async def picmessage(bot, ev: CQEvent):
 async def replymessage(bot, ev: CQEvent):
     mid = ev.message_id
     uid = ev.user_id
-    if not ev.message:
-        sv.logger.error(f"message is empty: {ev.raw_message}")
-        return
-    seg = ev.message[0]
+    seg=ev.message[0]
     if seg.type != 'reply':
         return
     tmid = seg.data['id']
     cmd = ev.message.extract_plain_text()
-    is_at_me = 0
+    flag1 = 0
     flag2 = 0
     for m in ev.message[2:]:
         if m.type == 'at' and m.data['qq'] == ev.self_id:
-            is_at_me = 1
+            flag1 = 1
     for name in NICKNAME:
         if name in cmd:
-            is_at_me = 1
+            flag1 = 1
             break
     for pfcmd in ['识图', '搜图', '查图', '找图']:
         if pfcmd in cmd:
             flag2 = 1
-    if not (is_at_me and flag2):
+    if not (flag1 and flag2):
         return
     if not priv.check_priv(ev, priv.SUPERUSER):
         if not lmtd.check(uid):
@@ -208,19 +204,17 @@ async def replymessage(bot, ev: CQEvent):
         tmsg = await bot.get_msg(self_id=ev.self_id, message_id=int(tmid))
     except ActionFailed:
         await bot.finish(ev, '该消息已过期，请重新转发~')
-    '''
-    file = ''
-    print(tmsg)
-    for m in tmsg["message"]:
-        if m["type"] == 'image':
-            file=m['data']['file']
-            url=m['data']['url']
-            subType=m['data']['subType']
-            break
-    if not file:
-        await bot.send(ev, '未找到图片~')
-        return
-    '''
+    # file = ''
+    # print(tmsg)
+    # for m in tmsg["message"]:
+    #     if m["type"] == 'image':
+    #         file=m['file']
+    #         url=m['url']
+    #         subType=m['subType']
+    #         break
+    # if not file:
+    #     await bot.send(ev, '未找到图片~')
+    #     return
     ret = re.search(r"\[CQ:image,file=(.*)?,url=(.*)\]", str(tmsg["message"]))
     if not ret:
         await bot.send(ev, '未找到图片~')
@@ -236,6 +230,7 @@ async def replymessage(bot, ev: CQEvent):
         file = file.split(',')[0]
     else:
         sbtype=None
+        
     if CHECK:
         result = await check_screenshot(bot, file, url)
         if result:
@@ -281,7 +276,6 @@ async def gsend(ev: CQEvent, msg):
 
 async def chain_reply(bot, ev, chain, msg):
     if ev.detail_type == 'guild':
-        logger.info('guild-----------------')
         await gsend(ev, msg)
         return chain
     if not CHAIN_REPLY:
@@ -291,12 +285,11 @@ async def chain_reply(bot, ev, chain, msg):
         data = {
             "type": "node",
             "data": {
-                    "name": str(NICKNAME[0]) if str(NICKNAME[0]) else '圣父',
+                    "name": str(NICKNAME[0]) if str(NICKNAME[0]) else '竹竹',
                     "user_id": str(ev.self_id),
                     "content": str(msg)
             }
         }
-        logger.info('生成转发信息')
         chain.append(data)
         return chain
 
@@ -307,10 +300,12 @@ async def picfinder(bot, ev, image_data):
     result = await get_image_data_sauce(image_data, SAUCENAO_KEY)
     image_data_report = result[0]
     simimax = result[1]
-    #await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message='发生index解析错误')
-    #await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message=image_data)
-    #await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message=image_data_report)
+    if 'Index #' in image_data_report:
+        await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message='发生index解析错误')
+        await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message=image_data)
+        await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message=image_data_report)
     chain = await chain_reply(bot, ev, chain, image_data_report)
+
     if float(simimax) > float(threshold):
         lmtd.increase(uid)
     else:
@@ -330,12 +325,9 @@ async def picfinder(bot, ev, image_data):
             logger.error("ascii2d not found imageInfo")
             chain = await chain_reply(bot, ev, chain, 'ascii2d检索失败…')
 
-    #if CHAIN_REPLY and (ev.detail_type != 'guild'):
-    if CHAIN_REPLY:
+    if CHAIN_REPLY and (ev.detail_type != 'guild'):
         await bot.send_group_forward_msg(group_id=ev['group_id'], messages=chain)
 
-
-'''
 bot = get_bot()
 
 
@@ -428,5 +420,3 @@ async def gpicfinder(ev: CQEvent):
     bot = hoshino.get_bot()
     for url in ret:
         asyncio.get_event_loop().create_task(picfinder(bot, ev, url))
-
-'''
