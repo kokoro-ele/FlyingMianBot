@@ -80,7 +80,7 @@ class Service:
     `on_command`, `on_natural_language`
 
     提供接口：
-    `scheduled_job`, `broadcast`
+    `scheduled_job`, `broadcast`,`broadcast_forward`
 
     服务的配置文件格式为：
     {
@@ -370,6 +370,17 @@ class Service:
                 l = len(msgs)
                 if l:
                     self.logger.info(f"群{gid} 投递{TAG}成功 共{l}条消息")
+            except Exception as e:
+                self.logger.error(f"群{gid} 投递{TAG}失败：{type(e)}")
+                self.logger.exception(e)
+    
+    async def broadcast_forward(self, msgs, TAG=''):
+        bot = self.bot
+        groups = await self.get_enable_groups()
+        for gid,_ in groups.items():
+            try:
+                    await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
+                    self.logger.info(f"群{gid} 投递{TAG}成功 ")
             except Exception as e:
                 self.logger.error(f"群{gid} 投递{TAG}失败：{type(e)}")
                 self.logger.exception(e)
