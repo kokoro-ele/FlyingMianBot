@@ -1,6 +1,5 @@
 import random
 from datetime import datetime
-from turtle import forward
 import hoshino
 from hoshino import Service
 from .base import format_setu_msg
@@ -38,7 +37,7 @@ async def get_img(keyword):
         })
     return forward_msg
 
-@sv.scheduled_job('cron', hour="8",minute="0")
+@sv.scheduled_job('cron', hour="9",minute="53")
 #@sv.on_fullmatch('mmm')
 async def day():
     forward_msg = await get_img('白丝')
