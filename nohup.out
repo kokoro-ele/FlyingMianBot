@@ -1684,3 +1684,739 @@ aiocqhttp.exceptions.ActionFailed: <ActionFailed data=None, echo={'seq': 158}, m
 [2022-07-20 08:54:39,865 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/06/27/18/39/40/75432040_p0_master1200.jpg
 [2022-07-20 08:54:40,462 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/05/30/21/07/54/90206906_p0_master1200.jpg
 [2022-07-20 08:54:41,100 涩图] INFO: Scheduled job fetch_setu_process completed.
+ujson module not found, using json
+msgpack not installed, MsgPackSerializer unavailable
+[2022-07-20 10:07:23,594 config] WARNING: Not found config of "randomdingzhen"
+[2022-07-20 10:07:23,594 config] WARNING: Not found config of "botmanage"
+[2022-07-20 10:07:23,594 config] WARNING: Not found config of "crazythursday"
+[2022-07-20 10:07:23,594 config] WARNING: Not found config of "homo114514"
+[2022-07-20 10:07:23,594 config] WARNING: Not found config of "petpet"
+[2022-07-20 10:07:23,594 config] INFO: Succeeded to load config of "imagegenerator"
+[2022-07-20 10:07:23,595 config] INFO: Succeeded to load config of "groupmaster"
+[2022-07-20 10:07:23,595 config] WARNING: Not found config of "moneyexchangerate"
+[2022-07-20 10:07:23,595 config] WARNING: Not found config of "translate"
+[2022-07-20 10:07:23,595 config] WARNING: Not found config of "maimaiDX"
+[2022-07-20 10:07:23,595 config] WARNING: Not found config of "qrcode"
+[2022-07-20 10:07:23,595 config] WARNING: Not found config of "setu"
+[2022-07-20 10:07:23,596 config] INFO: Succeeded to load config of "hourcall"
+[2022-07-20 10:07:23,596 config] WARNING: Not found config of "dice"
+[2022-07-20 10:07:23,596 config] INFO: Succeeded to load config of "picfinder"
+[2022-07-20 10:07:23,596 config] WARNING: Not found config of "explosion"
+[2022-07-20 10:07:24,056 nonebot] INFO: Succeeded to import "hoshino.modules.randomdingzhen.RandomDingzhen"
+[2022-07-20 10:07:24,056 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.alert"
+[2022-07-20 10:07:24,058 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.help"
+[2022-07-20 10:07:24,058 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.feedback"
+[2022-07-20 10:07:24,058 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.get_cqcode"
+[2022-07-20 10:07:24,060 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.service_manage"
+[2022-07-20 10:07:24,060 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.help"
+[2022-07-20 10:07:24,061 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.billing"
+[2022-07-20 10:07:24,061 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.group_leave"
+[2022-07-20 10:07:24,061 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.data_cleaner"
+[2022-07-20 10:07:24,061 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.broadcast"
+[2022-07-20 10:07:24,062 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.group_invite"
+[2022-07-20 10:07:24,062 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.ls"
+[2022-07-20 10:07:24,063 nonebot] INFO: Succeeded to import "hoshino.modules.crazythursday.fuckingCrazyThursday"
+[2022-07-20 10:07:24,063 nonebot] INFO: Succeeded to import "hoshino.modules.homo114514.dict"
+[2022-07-20 10:07:24,063 nonebot] INFO: Succeeded to import "hoshino.modules.homo114514.114514"
+[2022-07-20 10:07:24,119 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.models"
+[2022-07-20 10:07:24,119 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.functions"
+[2022-07-20 10:07:24,119 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.data_source"
+[2022-07-20 10:07:24,119 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.download"
+[2022-07-20 10:07:24,119 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.utils"
+[2022-07-20 10:07:24,202 nonebot] INFO: Succeeded to import "hoshino.modules.imagegenerator.image_generator"
+[2022-07-20 10:07:24,203 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.join_approve"
+[2022-07-20 10:07:24,204 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.sleeping_set"
+[2022-07-20 10:07:24,204 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.group_notice"
+[2022-07-20 10:07:24,205 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_abuse"
+[2022-07-20 10:07:24,205 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.random_repeater"
+[2022-07-20 10:07:24,206 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.chat"
+[2022-07-20 10:07:24,207 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_asoul"
+[2022-07-20 10:07:24,207 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.antiqks"
+[2022-07-20 10:07:24,256 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_lex"
+[2022-07-20 10:07:24,257 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_holo"
+[2022-07-20 10:07:24,257 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.loli_is_justice"
+[2022-07-20 10:07:24,257 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_msg_recall"
+[2022-07-20 10:07:24,266 nonebot] INFO: Succeeded to import "hoshino.modules.moneyexchangerate.huilv"
+[2022-07-20 10:07:24,867 nonebot] INFO: Succeeded to import "hoshino.modules.translate.translate"
+[2022-07-20 10:07:24,882 nonebot] INFO: Succeeded to import "hoshino.modules.maimaiDX.maimai"
+[2022-07-20 10:07:24,895 nonebot] INFO: Succeeded to import "hoshino.modules.qrcode.main"
+[2022-07-20 10:07:24,902 nonebot] INFO: Succeeded to import "hoshino.modules.setu.acggov"
+[2022-07-20 10:07:24,902 nonebot] INFO: Succeeded to import "hoshino.modules.setu.lolicon"
+[2022-07-20 10:07:24,903 nonebot] INFO: Succeeded to import "hoshino.modules.setu.base"
+[2022-07-20 10:07:24,903 nonebot] INFO: Succeeded to import "hoshino.modules.setu.config"
+[2022-07-20 10:07:24,904 nonebot] INFO: Succeeded to import "hoshino.modules.setu.dailydose"
+[2022-07-20 10:07:24,905 nonebot] INFO: Succeeded to import "hoshino.modules.hourcall.hourcall"
+[2022-07-20 10:07:24,905 nonebot] INFO: Succeeded to import "hoshino.modules.dice.dice"
+[2022-07-20 10:07:24,915 nonebot] INFO: Succeeded to import "hoshino.modules.picfinder.image"
+[2022-07-20 10:07:24,915 nonebot] INFO: Succeeded to import "hoshino.modules.explosion.voice_dict"
+[2022-07-20 10:07:24,916 nonebot] INFO: Succeeded to import "hoshino.modules.explosion.explosion"
+[2022-07-20 10:07:24,916 nonebot] INFO: Running on 127.0.0.1:8188
+ * Serving Quart app ''
+ * Environment: production
+ * Please use an ASGI server (e.g. Hypercorn) directly in production
+ * Debug mode: False
+ * Running on http://127.0.0.1:8188 (CTRL + C to quit)
+[2022-07-20 10:07:24,919 nonebot] INFO: Scheduler started
+[2022-07-20 10:07:25,860] Running on http://127.0.0.1:8188 (CTRL + C to quit)
+[2022-07-20 10:07:26,972] 127.0.0.1:45066 GET /ws 1.1 101 - 1164
+[2022-07-20 10:07:52,640 nonebot] INFO: Self: 2656914596, Message 58581317 from 534193319@[群:434364039]: '来两张黑丝涩图'
+[2022-07-20 10:07:52,640 涩图] INFO: Message 58581317 triggered send_search_setu.
+[2022-07-20 10:07:53,810 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/01/26/00/40/31/87306698_p0_master1200.jpg
+[2022-07-20 10:07:57,595 nonebot] INFO: Message 58581317 is ignored: Handled by Hoshino
+[2022-07-20 10:08:24,270 nonebot] INFO: Self: 2656914596, Message -1081971954 from 534193319@[群:434364039]: '随机丁真'
+[2022-07-20 10:08:24,271 随机丁真] INFO: Message -1081971954 triggered SentRandomDingzhen.
+[2022-07-20 10:08:26,008 nonebot] INFO: Message -1081971954 is ignored: Handled by Hoshino
+[2022-07-20 10:10:10,053 nonebot] INFO: Self: 2656914596, Message 1748444964 from 534193319@[群:837114430]: '随机丁真'
+[2022-07-20 10:10:10,053 随机丁真] INFO: Message 1748444964 triggered SentRandomDingzhen.
+[2022-07-20 10:10:11,518 nonebot] INFO: Message 1748444964 is ignored: Handled by Hoshino
+[2022-07-20 10:15:40,140 nonebot] INFO: Self: 2656914596, Message 919108887 from 534193319: '随机丁真'
+[2022-07-20 10:15:55,781 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_increase', 'time': 1658283355, 'self_id': 2656914596, 'sub_type': 'approve', 'user_id': 1340615572, 'group_id': 434364039, 'operator_id': 0}>
+[2022-07-20 10:16:07,260 nonebot] INFO: Self: 2656914596, Message 1457638971 from 1340615572@[群:434364039]: '天气'
+[2022-07-20 10:16:16,309 nonebot] INFO: Self: 2656914596, Message 568786605 from 534193319@[群:434364039]: '随机丁真'
+[2022-07-20 10:16:16,309 随机丁真] INFO: Message 568786605 triggered SentRandomDingzhen.
+[2022-07-20 10:16:17,539 nonebot] INFO: Message 568786605 is ignored: Handled by Hoshino
+[2022-07-20 10:16:59,135 头像表情包] INFO: Message -806838399 triggered gen_image_rua
+[2022-07-20 10:17:03,253 nonebot] INFO: Self: 2656914596, Message -806838399 from 534193319@[群:434364039]: '/rua [CQ:at,qq=1340615572] '
+[2022-07-20 10:17:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 10:17:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 10:17:25,525 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2017/06/09/19/23/15/63297000_p0_master1200.jpg
+[2022-07-20 10:17:26,130 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/04/09/18/24/54/97511349_p0_master1200.jpg
+[2022-07-20 10:17:26,850 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/11/27/00/00/08/94392739_p0_master1200.jpg
+[2022-07-20 10:17:27,524 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/02/09/13/13/43/87640554_p0_master1200.jpg
+[2022-07-20 10:17:28,166 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/10/19/12/30/00/85108862_p0_master1200.jpg
+[2022-07-20 10:17:28,722 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/05/03/19/50/41/97972749_p0_master1200.jpg
+[2022-07-20 10:17:29,243 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/11/26/07/30/00/85911104_p1_master1200.jpg
+[2022-07-20 10:17:29,803 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/12/25/21/27/29/86533437_p0_master1200.jpg
+[2022-07-20 10:17:30,489 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/08/18/21/00/01/76331491_p0_master1200.jpg
+[2022-07-20 10:17:31,051 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/05/22/01/52/05/74843584_p0_master1200.jpg
+[2022-07-20 10:17:31,722 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 10:19:43,210 nonebot] INFO: Self: 2656914596, Message 1304558805 from 534193319@[群:837114430]: '随机丁真'
+[2022-07-20 10:19:43,211 随机丁真] INFO: Message 1304558805 triggered SentRandomDingzhen.
+[2022-07-20 10:19:45,500 nonebot] INFO: Message 1304558805 is ignored: Handled by Hoshino
+[2022-07-20 10:26:21,465 nonebot] INFO: Self: 2656914596, Message -1546674695 from 534193319@[群:837114430]: '[CQ:image,file=bb48bccf6dcd269f3697e3c1451bce28.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/534193319/837114430-3204984322-BB48BCCF6DCD269F3697E3C1451BCE28/0?term=3]'
+[2022-07-20 10:26:44,775 头像表情包] INFO: Message 676377222 triggered gen_image_rua
+[2022-07-20 10:26:48,549 nonebot] INFO: Self: 2656914596, Message 676377222 from 1340615572@[群:434364039]: '/rua[CQ:at,qq=534193319] '
+[2022-07-20 10:26:56,789 nonebot] INFO: Self: 2656914596, Message 1066404853 from 1340615572@[群:434364039]: '随机丁真'
+[2022-07-20 10:26:56,789 随机丁真] INFO: Message 1066404853 triggered SentRandomDingzhen.
+[2022-07-20 10:26:58,123 nonebot] INFO: Message 1066404853 is ignored: Handled by Hoshino
+[2022-07-20 10:27:24,910 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 10:27:24,910 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 10:27:25,505 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/08/22/00/00/06/83842032_p0_master1200.jpg
+[2022-07-20 10:27:26,113 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/06/13/00/00/11/99015321_p0_master1200.jpg
+[2022-07-20 10:27:26,789 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/05/08/00/02/09/89678601_p0_master1200.jpg
+[2022-07-20 10:27:27,429 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/02/12/06/30/49/96160897_p0_master1200.jpg
+[2022-07-20 10:27:28,074 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/02/16/18/53/34/96300231_p0_master1200.jpg
+[2022-07-20 10:27:28,687 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/12/20/12/00/02/78381575_p0_master1200.jpg
+[2022-07-20 10:27:29,287 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/05/00/00/14/94568067_p0_master1200.jpg
+[2022-07-20 10:27:29,961 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/25/21/11/59/92256105_p0_master1200.jpg
+[2022-07-20 10:27:30,605 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/07/06/18/09/11/91054988_p0_master1200.jpg
+[2022-07-20 10:27:31,127 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/03/11/20/43/55/80050735_p0_master1200.jpg
+[2022-07-20 10:27:31,727 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 10:30:58,989 nonebot] INFO: Self: 2656914596, Message -778147111 from 1340615572@[群:434364039]: '随机丁真'
+[2022-07-20 10:30:58,990 随机丁真] INFO: Message -778147111 triggered SentRandomDingzhen.
+[2022-07-20 10:31:03,649 nonebot] INFO: Message -778147111 is ignored: Handled by Hoshino
+[2022-07-20 10:31:12,944 nonebot] INFO: Self: 2656914596, Message 956157932 from 1340615572@[群:434364039]: '随机丁真'
+[2022-07-20 10:31:12,944 随机丁真] INFO: Message 956157932 triggered SentRandomDingzhen.
+[2022-07-20 10:31:15,045 nonebot] INFO: Message 956157932 is ignored: Handled by Hoshino
+[2022-07-20 10:31:33,953 nonebot] INFO: Self: 2656914596, Message -688673088 from 1340615572@[群:434364039]: '随机丁真'
+[2022-07-20 10:31:33,954 随机丁真] INFO: Message -688673088 triggered SentRandomDingzhen.
+[2022-07-20 10:31:35,049 nonebot] INFO: Message -688673088 is ignored: Handled by Hoshino
+[2022-07-20 10:31:40,881 nonebot] INFO: Self: 2656914596, Message 827032519 from 1340615572@[群:434364039]: '随机丁真'
+[2022-07-20 10:31:40,882 随机丁真] INFO: Message 827032519 triggered SentRandomDingzhen.
+[2022-07-20 10:31:41,691 nonebot] INFO: Message 827032519 is ignored: Handled by Hoshino
+[2022-07-20 10:33:31,336 nonebot] INFO: Self: 2656914596, Message -371667832 from 534193319@[群:434364039]: '搜图'
+[2022-07-20 10:33:31,337 picfinder] INFO: Message -371667832 triggered start_finder.
+0.7006134969325153
+too short, not likely a screen shot
+[2022-07-20 10:33:36,182 image] INFO: Loading Image Search Container……
+[2022-07-20 10:33:36,182 image] DEBUG: Loading all view……
+[2022-07-20 10:33:36,182 image] DEBUG: Now starting get the SauceNAO data:https://gchat.qpic.cn/gchatpic_new/534193319/3924364039-2475309320-ADDC2A6367E9CE1EB87B9E9730F505D8/0?term=3
+[2022-07-20 10:33:39,629 image] INFO: 生成转发信息
+[2022-07-20 10:33:39,629 image] INFO: 生成转发信息
+[2022-07-20 10:33:39,630 image] INFO: Loading Image Search Container……
+[2022-07-20 10:33:39,641 image] DEBUG: Loading all view……
+[2022-07-20 10:33:39,641 image] DEBUG: Now starting get the https://ascii2d.net/search/url/https://gchat.qpic.cn/gchatpic_new/534193319/3924364039-2475309320-ADDC2A6367E9CE1EB87B9E9730F505D8/0?term=3
+[2022-07-20 10:33:47,715 image] INFO: 生成转发信息
+[2022-07-20 10:33:47,715 image] INFO: 生成转发信息
+[2022-07-20 10:33:49,807 nonebot] INFO: Self: 2656914596, Message 12282301 from 534193319@[群:434364039]: '[CQ:image,file=addc2a6367e9ce1eb87b9e9730f505d8.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/534193319/3924364039-2475309320-ADDC2A6367E9CE1EB87B9E9730F505D8/0?term=3]'
+[2022-07-20 10:34:03,975 nonebot] INFO: Self: 2656914596, Message -1716373497 from 534193319@[群:434364039]: '谢谢'
+[2022-07-20 10:34:03,975 picfinder] INFO: Message -1716373497 triggered thanks.
+turned off
+[2022-07-20 10:34:04,318 nonebot] INFO: Message -1716373497 is ignored: Handled by Hoshino
+[2022-07-20 10:34:14,257 nonebot] INFO: Self: 2656914596, Message 2114589952 from 1340615572@[群:434364039]: '搜图'
+[2022-07-20 10:34:14,257 picfinder] INFO: Message 2114589952 triggered start_finder.
+0.75
+too short, not likely a screen shot
+[2022-07-20 10:35:09,566 image] INFO: Loading Image Search Container……
+[2022-07-20 10:35:09,566 image] DEBUG: Loading all view……
+[2022-07-20 10:35:09,566 image] DEBUG: Now starting get the SauceNAO data:https://gchat.qpic.cn/gchatpic_new/1340615572/3924364039-2343048754-508C7CA8D36005BD049DB30137C6369B/0?term=3
+[2022-07-20 10:35:15,832 image] INFO: 生成转发信息
+[2022-07-20 10:35:15,832 image] INFO: 生成转发信息
+[2022-07-20 10:35:15,832 image] INFO: Loading Image Search Container……
+[2022-07-20 10:35:15,844 image] DEBUG: Loading all view……
+[2022-07-20 10:35:15,844 image] DEBUG: Now starting get the https://ascii2d.net/search/url/https://gchat.qpic.cn/gchatpic_new/1340615572/3924364039-2343048754-508C7CA8D36005BD049DB30137C6369B/0?term=3
+[2022-07-20 10:35:24,697 image] INFO: 生成转发信息
+[2022-07-20 10:35:24,697 image] INFO: 生成转发信息
+[2022-07-20 10:35:26,898 nonebot] INFO: Self: 2656914596, Message 1774890099 from 1340615572@[群:434364039]: '[CQ:image,file=508c7ca8d36005bd049db30137c6369b.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1340615572/3924364039-2343048754-508C7CA8D36005BD049DB30137C6369B/0?term=3]'
+[2022-07-20 10:35:36,823 nonebot] INFO: Self: 2656914596, Message 429938940 from 1340615572@[群:434364039]: '谢谢'
+[2022-07-20 10:35:36,823 picfinder] INFO: Message 429938940 triggered thanks.
+turned off
+[2022-07-20 10:35:37,117 nonebot] INFO: Message 429938940 is ignored: Handled by Hoshino
+[2022-07-20 10:35:44,541 nonebot] INFO: Message 2114589952 is ignored: Handled by Hoshino
+[2022-07-20 10:36:01,711 nonebot] INFO: Message -371667832 is ignored: Handled by Hoshino
+[2022-07-20 10:37:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 10:37:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 10:37:25,498 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/13/12/00/04/94751402_p1_master1200.jpg
+[2022-07-20 10:37:26,179 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/14/06/50/19/90544858_p0_master1200.jpg
+[2022-07-20 10:37:26,776 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/05/27/23/52/54/98582785_p0_master1200.jpg
+[2022-07-20 10:37:27,418 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/04/25/02/36/27/74366162_p0_master1200.jpg
+[2022-07-20 10:37:27,925 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/05/24/14/17/36/90063769_p0_master1200.jpg
+[2022-07-20 10:37:28,571 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/07/26/00/00/14/75908820_p0_master1200.jpg
+[2022-07-20 10:37:29,090 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/17/22/43/15/90621693_p0_master1200.jpg
+[2022-07-20 10:37:29,781 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/05/16/23/15/37/89891781_p0_master1200.jpg
+[2022-07-20 10:37:30,471 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/23/00/48/54/94945757_p1_master1200.jpg
+[2022-07-20 10:37:31,076 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/03/01/14/14/31/96604077_p0_master1200.jpg
+[2022-07-20 10:37:31,681 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 10:41:18,071 nonebot] INFO: Self: 2656914596, Message 1252800716 from 534193319@[群:837114430]: '[CQ:image,file=8cbe33b7af5be9a3d16979bf15399bff.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/534193319/837114430-3154975641-8CBE33B7AF5BE9A3D16979BF15399BFF/0?term=3]'
+[2022-07-20 10:47:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 10:47:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 10:47:25,548 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/02/28/19/45/15/96586378_p0_master1200.jpg
+[2022-07-20 10:47:26,349 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/03/31/23/05/45/97310126_p0_master1200.jpg
+[2022-07-20 10:47:27,032 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/21/13/09/40/94913700_p0_master1200.jpg
+[2022-07-20 10:47:27,671 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/07/08/18/59/41/69599202_p0_master1200.jpg
+[2022-07-20 10:47:28,388 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/02/10/16/53/16/79397071_p0_master1200.jpg
+[2022-07-20 10:47:28,992 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/09/09/12/10/29/92615829_p0_master1200.jpg
+[2022-07-20 10:47:29,635 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/03/20/20/19/91703875_p0_master1200.jpg
+[2022-07-20 10:47:30,275 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/04/10/13/32/07/97531490_p0_master1200.jpg
+[2022-07-20 10:47:30,831 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/04/23/52/26/90324061_p0_master1200.jpg
+[2022-07-20 10:47:31,478 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/08/31/12/22/35/84057852_p0_master1200.jpg
+[2022-07-20 10:47:32,078 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 10:57:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 10:57:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 10:57:25,512 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/10/09/16/49/49/93325309_p0_master1200.jpg
+[2022-07-20 10:57:26,186 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/06/16/00/54/43/99071284_p0_master1200.jpg
+[2022-07-20 10:57:26,989 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/06/14/22/54/37/99055458_p0_master1200.jpg
+[2022-07-20 10:57:27,646 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/11/14/00/49/41/71646036_p0_master1200.jpg
+[2022-07-20 10:57:28,277 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/12/25/11/05/15/78476449_p0_master1200.jpg
+[2022-07-20 10:57:28,889 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/21/09/49/53/90707448_p0_master1200.jpg
+[2022-07-20 10:57:29,493 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/01/01/15/20/59/95208414_p0_master1200.jpg
+[2022-07-20 10:57:30,211 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/27/18/51/53/92299051_p0_master1200.jpg
+[2022-07-20 10:57:30,847 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/07/09/19/23/46/82860848_p0_master1200.jpg
+[2022-07-20 10:57:31,569 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/25/10/56/04/92245902_p0_master1200.jpg
+[2022-07-20 10:57:32,149 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:00:00,001 hourcall] INFO: Scheduled job hour_call start.
+[2022-07-20 11:00:00,002 hourcall] INFO: Scheduled job hour_call completed.
+[2022-07-20 11:02:10,427 nonebot] INFO: Self: 2656914596, Message 1034618970 from 529654931@[群:837114430]: '[CQ:image,file=f8d600105bd225d7e9c49db28f6acc6e.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/529654931/837114430-2171817821-F8D600105BD225D7E9C49DB28F6ACC6E/0?term=3]'
+[2022-07-20 11:02:27,102 nonebot] INFO: Self: 2656914596, Message -1265600252 from 877031859@[群:651925899]: '[CQ:json,data={"app":"com.tencent.miniapp_01"&#44;"config":{"autoSize":0&#44;"ctime":1658286144&#44;"forward":1&#44;"height":0&#44;"token":"85d20b62038219b2588e4d1b0e2d5bea"&#44;"type":"normal"&#44;"width":0}&#44;"desc":"哔哩哔哩"&#44;"extra":{"app_type":1&#44;"appid":100951776&#44;"uin":877031859}&#44;"meta":{"detail_1":{"appType":0&#44;"appid":"1109937557"&#44;"desc":"电棍：PANDORA OTTODOXXX"&#44;"gamePoints":""&#44;"gamePointsUrl":""&#44;"host":{"nick":"chihiro千寻"&#44;"uin":877031859}&#44;"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1657790505"&#44;"preview":"pubminishare-30161.picsz.qpic.cn/05bb1e09-62db-4dab-a238-e70767338927"&#44;"qqdocurl":"https://b23.tv/GDZuUzu?share_medium=android&amp;share_source=qq&amp;bbid=XX92559900A1A16882BF9CEAA905FAA405F7B&amp;ts=1658286130273"&#44;"scene":1036&#44;"shareTemplateData":{}&#44;"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4"&#44;"showLittleTail":""&#44;"title":"哔哩哔哩"&#44;"url":"m.q.qq.com/a/s/792fa9fe8a50eac0138dccbabe57dc19"}}&#44;"needShareCallBack":false&#44;"prompt":"&#91;QQ小程序&#93;哔哩哔哩"&#44;"ver":"1.0.0.19"&#44;"view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}]'
+[2022-07-20 11:02:31,370 nonebot] INFO: Self: 2656914596, Message -1013495406 from 877031859@[群:651925899]: '两眼一黑'
+[2022-07-20 11:07:24,905 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 11:07:24,906 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 11:07:25,504 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/10/08/05/16/34/77174279_p0_master1200.jpg
+[2022-07-20 11:07:26,187 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/03/20/56/02/90297537_p0_master1200.jpg
+[2022-07-20 11:07:26,943 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/08/01/17/53/42/76019736_p0_master1200.jpg
+[2022-07-20 11:07:27,654 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/09/28/22/25/53/70837509_p0_master1200.jpg
+[2022-07-20 11:07:28,373 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/04/17/19/00/38/97692227_p0_master1200.jpg
+[2022-07-20 11:07:28,982 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/03/06/12/45/40/73538012_p0_master1200.jpg
+[2022-07-20 11:07:29,629 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/06/25/22/28/14/69403302_p0_master1200.jpg
+[2022-07-20 11:07:30,249 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/03/23/00/05/46/80296418_p0_master1200.jpg
+[2022-07-20 11:07:30,959 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/13/21/22/38/94759523_p0_master1200.jpg
+[2022-07-20 11:07:31,560 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/07/10/19/02/38/99633058_p0_master1200.jpg
+[2022-07-20 11:07:32,160 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:16:46,214 nonebot] INFO: Self: 2656914596, Message -1532864032 from 534193319@[群:837114430]: '[CQ:image,file=5e291b223504eb6a9c83a06a7de22c72.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/534193319/837114430-2923153511-5E291B223504EB6A9C83A06A7DE22C72/0?term=3]'
+[2022-07-20 11:17:24,909 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 11:17:24,909 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 11:17:25,524 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/11/06/19/01/42/85497288_p0_master1200.jpg
+[2022-07-20 11:17:26,208 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/02/28/20/00/03/88118188_p0_master1200.jpg
+[2022-07-20 11:17:26,894 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/20/21/50/34/92130919_p0_master1200.jpg
+[2022-07-20 11:17:27,575 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/02/11/00/00/50/96145616_p0_master1200.jpg
+[2022-07-20 11:17:28,296 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/01/21/19/12/54/79021612_p0_master1200.jpg
+[2022-07-20 11:17:28,822 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/12/19/03/30/27/78364011_p0_master1200.jpg
+[2022-07-20 11:17:29,463 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/01/01/00/18/38/86700197_p0_master1200.jpg
+[2022-07-20 11:17:30,073 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/04/10/19/18/17/74138134_p1_master1200.jpg
+[2022-07-20 11:17:30,601 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2016/05/12/22/27/29/56849555_p0_master1200.jpg
+[2022-07-20 11:17:31,196 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:27:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 11:27:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 11:27:25,521 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/05/07/14/59/27/98161781_p0_master1200.jpg
+[2022-07-20 11:27:26,160 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/04/14/00/38/14/97609961_p0_master1200.jpg
+[2022-07-20 11:27:26,884 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/02/21/13/10/16/87935214_p0_master1200.jpg
+[2022-07-20 11:27:27,490 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/05/16/00/00/13/89864502_p0_master1200.jpg
+[2022-07-20 11:27:28,163 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/27/17/55/46/90848261_p0_master1200.jpg
+[2022-07-20 11:27:28,890 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/10/01/21/14/42/70972684_p2_master1200.jpg
+[2022-07-20 11:27:29,481 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/29/00/00/01/95096384_p0_master1200.jpg
+[2022-07-20 11:27:30,163 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/07/25/10/39/49/91482984_p0_master1200.jpg
+[2022-07-20 11:27:30,727 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/03/10/00/00/12/80013073_p0_master1200.jpg
+[2022-07-20 11:27:31,328 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:30:19,641 nonebot] INFO: Self: 2656914596, Message -1855544587 from 2283762767@[群:651925899]: '两眼一黑'
+[2022-07-20 11:30:44,143 nonebot] INFO: Self: 2656914596, Message -429813149 from 412704308@[群:651925899]: '你就是做这个的料!'
+[2022-07-20 11:37:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 11:37:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 11:37:25,525 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/05/01/00/00/19/98000868_p0_master1200.jpg
+[2022-07-20 11:37:26,133 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2016/12/24/01/15/32/60514568_p0_master1200.jpg
+[2022-07-20 11:37:26,813 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/05/28/00/53/52/90138982_p0_master1200.jpg
+[2022-07-20 11:37:27,407 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/02/04/00/00/10/79270021_p0_master1200.jpg
+[2022-07-20 11:37:28,018 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/06/05/13/01/51/98841142_p4_master1200.jpg
+[2022-07-20 11:37:28,667 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/10/28/00/02/56/77513691_p0_master1200.jpg
+[2022-07-20 11:37:29,269 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/21/00/22/09/92135742_p0_master1200.jpg
+[2022-07-20 11:37:29,871 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/07/09/14/59/42/99602638_p0_master1200.jpg
+[2022-07-20 11:37:30,608 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/12/13/21/00/57/72096942_p3_master1200.jpg
+[2022-07-20 11:37:31,166 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/05/20/21/36/21/98478777_p0_master1200.jpg
+[2022-07-20 11:37:31,705 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:39:31,513 nonebot] INFO: Self: 2656914596, Message -139576880 from 1340615572@[群:434364039]: '随机丁真'
+[2022-07-20 11:39:31,513 随机丁真] INFO: Message -139576880 triggered SentRandomDingzhen.
+[2022-07-20 11:39:33,071 nonebot] INFO: Message -139576880 is ignored: Handled by Hoshino
+[2022-07-20 11:39:46,670 nonebot] INFO: Self: 2656914596, Message 269882583 from 534193319@[群:434364039]: '来一张纪委涩图'
+[2022-07-20 11:39:46,671 涩图] INFO: Message 269882583 triggered send_search_setu.
+[2022-07-20 11:39:51,587 nonebot] INFO: Message 269882583 is ignored: Handled by Hoshino
+[2022-07-20 11:43:47,326 nonebot] INFO: Self: 2656914596, Message -605114870 from 534193319@[群:434364039]: 'lssv'
+[2022-07-20 11:43:47,993 nonebot] INFO: Message -605114870 is handled as a command
+[2022-07-20 11:44:01,209 nonebot] INFO: Self: 2656914596, Message 848104255 from 534193319@[群:434364039]: '启用 每日一涩'
+[2022-07-20 11:44:01,411 每日一涩] INFO: Service 每日一涩 is enabled at group 434364039
+[2022-07-20 11:44:01,411 nonebot] INFO: Message 848104255 is handled as a command
+[2022-07-20 11:44:08,692 nonebot] INFO: Self: 2656914596, Message 2137572313 from 2283762767@[群:651925899]: '什么时候我才能打白潘'
+[2022-07-20 11:44:09,479 头像表情包] INFO: Message 141554511 triggered gen_image_出警
+[2022-07-20 11:44:13,126 nonebot] INFO: Self: 2656914596, Message 141554511 from 1239461504@[群:651925899]: '/出警[CQ:at,qq=1239461504] '
+[2022-07-20 11:44:18,506 nonebot] INFO: Self: 2656914596, Message -519285126 from 2283762767@[群:651925899]: '？'
+[2022-07-20 11:44:25,095 nonebot] INFO: Self: 2656914596, Message 2013595584 from 2283762767@[群:651925899]: '[CQ:image,file=014d27534fe4e184162e8141f61cd64c.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2976012749-014D27534FE4E184162E8141F61CD64C/0?term=3]'
+[2022-07-20 11:44:51,245 nonebot] INFO: Self: 2656914596, Message -595367405 from 1340615572@[群:434364039]: 'lssv'
+[2022-07-20 11:44:56,220 头像表情包] INFO: Message 251803478 triggered gen_image_小天使
+[2022-07-20 11:44:58,572 nonebot] INFO: Self: 2656914596, Message 251803478 from 1239461504@[群:651925899]: '/小天使[CQ:at,qq=1239461504] '
+[2022-07-20 11:45:05,968 nonebot] INFO: Self: 2656914596, Message -390456751 from 1239461504@[群:651925899]: '[CQ:image,file=288d2695f77a50c8f3fe479e18a25486.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2783354701-288D2695F77A50C8F3FE479E18A25486/0?term=3]'
+[2022-07-20 11:45:35,489 nonebot] INFO: Self: 2656914596, Message -1417389435 from 534193319@[群:434364039]: '你是试验品'
+[2022-07-20 11:45:41,547 nonebot] INFO: Self: 2656914596, Message 993740564 from 534193319@[群:434364039]: '不配打命令'
+[2022-07-20 11:45:42,557 头像表情包] INFO: Message -2005036108 triggered gen_image_永远喜欢
+[2022-07-20 11:45:45,935 nonebot] INFO: Self: 2656914596, Message -2005036108 from 1239461504@[群:651925899]: '/永远喜欢[CQ:at,qq=1239461504] '
+[2022-07-20 11:45:49,578 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_card', 'time': 1658288749, 'self_id': 2656914596, 'group_id': 651925899, 'user_id': 1512817267, 'card_new': '真中啦啦', 'card_old': ''}>
+[2022-07-20 11:45:49,578 头像表情包] INFO: Message 1718874776 triggered gen_image_小天使
+[2022-07-20 11:45:52,680 nonebot] INFO: Self: 2656914596, Message 1718874776 from 1512817267@[群:651925899]: '/小天使[CQ:at,qq=1512817267] '
+[2022-07-20 11:45:59,956 nonebot] INFO: Self: 2656914596, Message -1894754387 from 1239461504@[群:651925899]: '[CQ:image,file=a4bea0f40230a270457f15f3ef1399bc.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2292860027-A4BEA0F40230A270457F15F3EF1399BC/0?term=3]'
+[2022-07-20 11:46:08,957 头像表情包] INFO: Message -132683973 triggered gen_image_小天使
+[2022-07-20 11:46:10,965 nonebot] INFO: Self: 2656914596, Message 1629369985 from 1239461504@[群:651925899]: '太好玩了'
+[2022-07-20 11:46:11,894 nonebot] INFO: Self: 2656914596, Message 1279031170 from 534193319@[群:434364039]: '金龙盘旋 纪委 今天 怎么安排'
+[2022-07-20 11:46:11,894 生草图片生成器] INFO: Message 1279031170 triggered gen_jl.
+[2022-07-20 11:46:12,076 nonebot] INFO: Self: 2656914596, Message -132683973 from 2283762767@[群:651925899]: '/小天使[CQ:at,qq=2283762767] '
+[2022-07-20 11:46:16,505 nonebot] INFO: Self: 2656914596, Message -2035934330 from 2283762767@[群:651925899]: '[CQ:image,file=259f16d49f149c1c21025ef7c4bd4022.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-3005696990-259F16D49F149C1C21025EF7C4BD4022/0?term=3]'
+[2022-07-20 11:46:16,651 nonebot] INFO: Message 1279031170 is ignored: Handled by Hoshino
+[2022-07-20 11:46:35,280 头像表情包] INFO: Message -241095920 triggered gen_image_像样的亲亲
+[2022-07-20 11:46:38,430 nonebot] INFO: Self: 2656914596, Message -241095920 from 1239461504@[群:651925899]: '/像样的亲亲[CQ:at,qq=1239461504] '
+[2022-07-20 11:46:42,811 nonebot] INFO: Self: 2656914596, Message -1338296859 from 1239461504@[群:651925899]: '？'
+[2022-07-20 11:46:53,911 nonebot] INFO: Self: 2656914596, Message 1543294705 from 1340615572@[群:434364039]: '金龙盘旋  田田  什么时候打mai'
+[2022-07-20 11:46:53,911 生草图片生成器] INFO: Message 1543294705 triggered gen_jl.
+[2022-07-20 11:46:53,912 nonebot] INFO: Message 1543294705 is ignored: ServiceFunc of HoshinoBot finished.
+[2022-07-20 11:46:55,638 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_card', 'time': 1658288815, 'self_id': 2656914596, 'group_id': 651925899, 'user_id': 1512817267, 'card_new': '', 'card_old': '真中啦啦'}>
+[2022-07-20 11:46:56,058 nonebot] INFO: Self: 2656914596, Message 691168351 from 1512817267@[群:651925899]: '[CQ:image,file=1539dcad9c6675b5fb60af2cc669bc94.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1512817267/651925899-2206207073-1539DCAD9C6675B5FB60AF2CC669BC94/0?term=3]'
+[2022-07-20 11:47:01,364 nonebot] INFO: Self: 2656914596, Message 1580553417 from 1512817267@[群:651925899]: '来看看啦啦'
+[2022-07-20 11:47:04,597 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_recall', 'time': 1658288813, 'self_id': 2656914596, 'group_id': 434364039, 'user_id': 1340615572, 'operator_id': 1340615572, 'message_id': 1543294705}>
+[2022-07-20 11:47:07,624 nonebot] INFO: Self: 2656914596, Message -1242386467 from 1340615572@[群:434364039]: '金龙盘旋  田田  什么时候 打mai'
+[2022-07-20 11:47:07,625 生草图片生成器] INFO: Message -1242386467 triggered gen_jl.
+[2022-07-20 11:47:14,077 nonebot] INFO: Self: 2656914596, Message -1068383894 from 1239461504@[群:651925899]: 'p图神器'
+[2022-07-20 11:47:23,175 nonebot] INFO: Message -1242386467 is ignored: Handled by Hoshino
+[2022-07-20 11:47:24,904 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 11:47:24,905 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 11:47:25,496 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/01/21/00/00/00/95659651_p0_master1200.jpg
+[2022-07-20 11:47:26,172 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/21/08/26/45/90706732_p0_master1200.jpg
+[2022-07-20 11:47:26,779 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/03/31/19/39/05/97304702_p0_master1200.jpg
+[2022-07-20 11:47:27,373 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2017/06/26/15/56/31/63575433_p0_master1200.jpg
+[2022-07-20 11:47:28,056 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/05/19/22/30/24/74809025_p0_master1200.jpg
+[2022-07-20 11:47:28,657 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/08/22/21/45/02/83862012_p0_master1200.jpg
+[2022-07-20 11:47:29,298 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/08/02/00/00/17/69972819_p0_master1200.jpg
+[2022-07-20 11:47:29,976 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/12/25/00/24/56/86511322_p0_master1200.jpg
+[2022-07-20 11:47:30,620 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/10/10/03/53/50/71111285_p0_master1200.jpg
+[2022-07-20 11:47:31,290 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2018/10/04/01/27/57/71008358_p0_master1200.jpg
+[2022-07-20 11:47:31,856 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:47:36,354 头像表情包] INFO: Message -1219038724 triggered gen_image_问问
+[2022-07-20 11:47:38,989 nonebot] INFO: Self: 2656914596, Message -1219038724 from 1239461504@[群:651925899]: '/问问[CQ:at,qq=1239461504] '
+[2022-07-20 11:48:02,363 头像表情包] INFO: Message 1498976464 triggered gen_image_玩
+[2022-07-20 11:48:12,250 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_recall', 'time': 1658288882, 'self_id': 2656914596, 'message_id': 1498976464, 'group_id': 651925899, 'user_id': 1239461504, 'operator_id': 1239461504}>
+[2022-07-20 11:48:23,083 nonebot] INFO: Self: 2656914596, Message 1498976464 from 1239461504@[群:651925899]: '/玩[CQ:at,qq=1239461504] '
+[2022-07-20 11:48:30,909 头像表情包] INFO: Message -1092567593 triggered gen_image_丢
+[2022-07-20 11:48:33,605 nonebot] INFO: Self: 2656914596, Message -1092567593 from 1239461504@[群:651925899]: '/丢[CQ:at,qq=1239461504] '
+[2022-07-20 11:48:51,567 头像表情包] INFO: Message -1457519452 triggered gen_image_爬
+[2022-07-20 11:48:55,344 nonebot] INFO: Self: 2656914596, Message -1457519452 from 2519463315@[群:651925899]: '/爬[CQ:at,qq=2519463315] '
+[2022-07-20 11:49:06,236 头像表情包] INFO: Message 1194222984 triggered gen_image_交个朋友
+[2022-07-20 11:49:09,356 nonebot] INFO: Self: 2656914596, Message 1194222984 from 1239461504@[群:651925899]: '/交个朋友[CQ:at,qq=1239461504] '
+[2022-07-20 11:49:33,774 头像表情包] INFO: Message -1370636099 triggered gen_image_交个朋友
+[2022-07-20 11:49:36,245 nonebot] INFO: Self: 2656914596, Message -1370636099 from 1512817267@[群:651925899]: '/交个朋友[CQ:at,qq=1512817267] '
+[2022-07-20 11:51:26,695 nonebot] INFO: Self: 2656914596, Message 1078174097 from 1512817267@[群:651925899]: '[CQ:image,file=1d0ad693ea9a533fa1439845555c134c.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1512817267/651925899-2712048729-1D0AD693EA9A533FA1439845555C134C/0?term=3]'
+[2022-07-20 11:51:35,809 nonebot] INFO: Self: 2656914596, Message -788743168 from 2676471682@[群:651925899]: '这个是啥玩意'
+[2022-07-20 11:51:48,609 nonebot] INFO: Self: 2656914596, Message -1476686698 from 1512817267@[群:651925899]: 'bot'
+WARNING: decoder/databar.c:1249: _zbar_decode_databar: Assertion "seg->finder >= 0" failed.
+	i=17 f=-1(001) part=1
+[2022-07-20 11:51:52,415 nonebot] INFO: Self: 2656914596, Message -183867407 from 1239461504@[群:651925899]: '[CQ:image,file=e6ba649cd1dbd8e05f9cb6c8ad037508.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-3112021765-E6BA649CD1DBD8E05F9CB6C8AD037508/0?term=3]'
+[2022-07-20 11:51:55,997 头像表情包] INFO: Message -2113054873 triggered gen_image_交个朋友
+[2022-07-20 11:51:58,955 nonebot] INFO: Self: 2656914596, Message -2113054873 from 2676471682@[群:651925899]: '/交个朋友[CQ:at,qq=2676471682] '
+[2022-07-20 11:52:23,542 头像表情包] INFO: Message 1812149835 triggered gen_image_注意力涣散
+[2022-07-20 11:52:24,029 nonebot] INFO: Request: <Event, {'post_type': 'request', 'request_type': 'group', 'time': 1658289144, 'self_id': 2656914596, 'sub_type': 'invite', 'group_id': 315372702, 'user_id': 534193319, 'comment': '', 'flag': '1658289143757985'}>
+[2022-07-20 11:52:24,330 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_increase', 'time': 1658289144, 'self_id': 2656914596, 'sub_type': 'approve', 'operator_id': 0, 'user_id': 2656914596, 'group_id': 315372702}>
+[2022-07-20 11:52:27,690 nonebot] INFO: Self: 2656914596, Message 1812149835 from 1239461504@[群:651925899]: '/注意力涣散[CQ:at,qq=1239461504] '
+[2022-07-20 11:52:30,011 nonebot] INFO: Self: 2656914596, Message -1949400419 from 534193319@[群:315372702]: 'lssv'
+[2022-07-20 11:52:30,657 nonebot] INFO: Message -1949400419 is handled as a command
+[2022-07-20 11:52:39,953 头像表情包] INFO: Message -2057268354 triggered gen_image_小天使
+[2022-07-20 11:52:40,888 nonebot] INFO: Self: 2656914596, Message 1707140017 from 534193319@[群:315372702]: '启用 每日一涩'
+[2022-07-20 11:52:41,233 每日一涩] INFO: Service 每日一涩 is enabled at group 315372702
+[2022-07-20 11:52:41,233 nonebot] INFO: Message 1707140017 is handled as a command
+[2022-07-20 11:52:42,873 nonebot] INFO: Self: 2656914596, Message -2057268354 from 1512817267@[群:651925899]: '/小天使[CQ:at,qq=1512817267] '
+[2022-07-20 11:52:51,067 nonebot] INFO: Self: 2656914596, Message -2106011978 from 534193319@[群:315372702]: 'OK'
+[2022-07-20 11:52:53,106 nonebot] INFO: Self: 2656914596, Message -176161248 from 1340615572@[群:315372702]: 'lssv'
+[2022-07-20 11:52:53,661 nonebot] INFO: Message -176161248 is handled as a command
+[2022-07-20 11:52:58,670 nonebot] INFO: Self: 2656914596, Message -490780845 from 534193319@[群:315372702]: '我不是管理员也能设置'
+[2022-07-20 11:53:08,424 头像表情包] INFO: Message 1802433106 triggered gen_image_阿尼亚喜欢
+[2022-07-20 11:53:10,777 nonebot] INFO: Self: 2656914596, Message 1802433106 from 1512817267@[群:651925899]: '/阿尼亚喜欢[CQ:at,qq=1512817267] '
+[2022-07-20 11:53:12,057 nonebot] INFO: Self: 2656914596, Message 2075530985 from 1340615572@[群:315372702]: '启用 生草图片生成器'
+[2022-07-20 11:53:12,229 生草图片生成器] INFO: Service 生草图片生成器 is enabled at group 315372702
+[2022-07-20 11:53:12,229 nonebot] INFO: Message 2075530985 is handled as a command
+[2022-07-20 11:53:17,237 nonebot] INFO: Self: 2656914596, Message -1932075179 from 534193319@[群:651925899]: 'lssv'
+[2022-07-20 11:53:17,802 nonebot] INFO: Message -1932075179 is handled as a command
+[2022-07-20 11:53:24,982 nonebot] INFO: Request: <Event, {'post_type': 'request', 'request_type': 'friend', 'time': 1658289204, 'self_id': 2656914596, 'user_id': 1340615572, 'comment': '我是Big Water', 'flag': '1658289204000000'}>
+[2022-07-20 11:53:30,705 nonebot] INFO: Self: 2656914596, Message -1693030874 from 534193319@[群:651925899]: '启用 每日一涩'
+[2022-07-20 11:53:30,877 每日一涩] INFO: Service 每日一涩 is enabled at group 651925899
+[2022-07-20 11:53:30,880 nonebot] INFO: Message -1693030874 is handled as a command
+[2022-07-20 11:53:37,452 nonebot] INFO: Self: 2656914596, Message 1964508938 from 1512817267@[群:651925899]: '[CQ:image,file=b795c5aa89b8da14eb122866fb28d2c0.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1512817267/651925899-3135011268-B795C5AA89B8DA14EB122866FB28D2C0/0?term=3]'
+[2022-07-20 11:53:39,225 nonebot] INFO: Request: <Event, {'post_type': 'request', 'request_type': 'friend', 'time': 1658289219, 'self_id': 2656914596, 'user_id': 1340615572, 'comment': '我是Big Water', 'flag': '1658289204000000'}>
+[2022-07-20 11:53:53,779 nonebot] INFO: Self: 2656914596, Message -344157527 from 2283762767@[群:651925899]: 'antiholo'
+[2022-07-20 11:53:54,992 nonebot] INFO: Self: 2656914596, Message -1669619137 from 2283762767@[群:651925899]: '草'
+[2022-07-20 11:53:57,302 nonebot] INFO: Self: 2656914596, Message 91419525 from 2283762767@[群:651925899]: '我试一下'
+[2022-07-20 11:54:03,413 nonebot] INFO: Self: 2656914596, Message 1920320275 from 2283762767@[群:651925899]: '夏色祭'
+[2022-07-20 11:54:11,418 nonebot] INFO: Self: 2656914596, Message -490021246 from 2283762767@[群:651925899]: '嗯？'
+[2022-07-20 11:54:25,148 nonebot] INFO: Self: 2656914596, Message -1781666284 from 2283762767@[群:651925899]: '每日一涩呢'
+[2022-07-20 11:54:25,511 nonebot] INFO: Self: 2656914596, Message 1804159615 from 1512817267@[群:651925899]: '我朋友说[CQ:at,qq=1512817267] '
+[2022-07-20 11:54:29,104 nonebot] INFO: Self: 2656914596, Message 479099625 from 2283762767@[群:651925899]: '咋用啊'
+[2022-07-20 11:54:31,455 nonebot] INFO: Self: 2656914596, Message -2054739117 from 2283762767@[群:651925899]: '[CQ:image,file=ac4b38135673422f8598c8361fa04561.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2609643086-AC4B38135673422F8598C8361FA04561/0?term=3]'
+[2022-07-20 11:54:42,553 头像表情包] INFO: Message -226485307 triggered gen_image_我朋友说
+[2022-07-20 11:54:43,622 nonebot] INFO: Self: 2656914596, Message -226485307 from 1512817267@[群:651925899]: '/我朋友说[CQ:at,qq=1512817267] '
+[2022-07-20 11:54:59,066 nonebot] INFO: Self: 2656914596, Message -1831488548 from 534193319@[群:315372702]: '帮助生草图片生成器'
+[2022-07-20 11:54:59,066 _help_] INFO: Message -1831488548 triggered send_help.
+[2022-07-20 11:54:59,358 nonebot] INFO: Message -1831488548 is ignored: Handled by Hoshino
+[2022-07-20 11:55:00,762 nonebot] INFO: Self: 2656914596, Message 467910384 from 1512817267@[群:651925899]: '/每日一涩'
+[2022-07-20 11:55:14,957 nonebot] INFO: Self: 2656914596, Message -2098532534 from 1512817267@[群:651925899]: '没有诶'
+[2022-07-20 11:55:26,646 nonebot] INFO: Self: 2656914596, Message -168960036 from 534193319@[群:651925899]: '每日一涩是早中晚自动推送涩图'
+[2022-07-20 11:55:37,872 nonebot] INFO: Self: 2656914596, Message 1699922509 from 534193319@[群:651925899]: '来一张白丝涩图'
+[2022-07-20 11:55:37,872 涩图] INFO: Message 1699922509 triggered send_search_setu.
+[2022-07-20 11:55:39,014 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/04/27/14/07/39/89424723_p0_master1200.jpg
+[2022-07-20 11:55:41,677 nonebot] INFO: Self: 2656914596, Message 1922202430 from 1512817267@[群:651925899]: '草'
+[2022-07-20 11:55:42,710 nonebot] INFO: Message 1699922509 is ignored: Handled by Hoshino
+[2022-07-20 11:56:22,246 nonebot] INFO: Self: 2656914596, Message 2094781168 from 1340615572@[群:315372702]: '低情商 田田 高情商 宝宝'
+[2022-07-20 11:56:22,246 生草图片生成器] INFO: Message 2094781168 triggered gen_high_eq.
+[2022-07-20 11:56:22,246 生草图片生成器] ERROR: <class 'FileNotFoundError'> occured when gen_high_eq handling message 2094781168.
+[2022-07-20 11:56:22,247 生草图片生成器] ERROR: [Errno 2] No such file or directory: '/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/../images/high_eq_image.png'
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/msghandler.py", line 21, in handle_message
+    await service_func.func(bot, event)
+  File "/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/image_generator.py", line 73, in gen_high_eq
+    img_p = Image.open(high_eq_path)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/PIL/Image.py", line 3068, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/../images/high_eq_image.png'
+[2022-07-20 11:56:22,248 nonebot] INFO: Message 2094781168 is ignored: Handled by Hoshino
+[2022-07-20 11:57:11,930 nonebot] INFO: Self: 2656914596, Message -1667491310 from 1239461504@[群:651925899]: '来一份黑丝涩图'
+[2022-07-20 11:57:11,931 涩图] INFO: Message -1667491310 triggered send_search_setu.
+[2022-07-20 11:57:13,473 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/12/26/20/09/03/86557749_p0_master1200.jpg
+[2022-07-20 11:57:16,992 nonebot] INFO: Message -1667491310 is ignored: Handled by Hoshino
+[2022-07-20 11:57:24,908 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 11:57:24,908 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 11:57:25,524 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/09/16/00/10/03/76802997_p0_master1200.jpg
+[2022-07-20 11:57:26,160 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/06/14/13/42/39/99045981_p0_master1200.jpg
+[2022-07-20 11:57:26,762 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/10/02/10/40/43/93163618_p0_master1200.jpg
+[2022-07-20 11:57:27,484 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/06/24/19/47/22/82536662_p0_master1200.jpg
+[2022-07-20 11:57:28,201 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/10/24/01/07/37/93640549_p0_master1200.jpg
+[2022-07-20 11:57:28,881 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/07/15/19/14/09/91261434_p0_master1200.jpg
+[2022-07-20 11:57:29,473 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/12/20/23/21/55/94904812_p0_master1200.jpg
+[2022-07-20 11:57:30,075 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/01/02/00/00/04/78652669_p0_master1200.jpg
+[2022-07-20 11:57:30,668 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/06/11/21/39/20/90482590_p0_master1200.jpg
+[2022-07-20 11:57:31,306 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/01/09/21/11/55/86933671_p0_master1200.jpg
+[2022-07-20 11:57:31,829 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 11:57:35,358 nonebot] INFO: Self: 2656914596, Message 49844145 from 2283762767@[群:651925899]: '草'
+[2022-07-20 11:57:38,706 nonebot] INFO: Self: 2656914596, Message -1678647797 from 1239461504@[群:651925899]: '来一份涩图'
+[2022-07-20 11:57:38,706 涩图] INFO: Message -1678647797 triggered send_search_setu.
+[2022-07-20 11:57:39,000 nonebot] INFO: Message -1678647797 is ignored: Handled by Hoshino
+[2022-07-20 11:57:39,302 nonebot] INFO: Self: 2656914596, Message 199025254 from 534193319@[群:315372702]: '低情商 纪委 高情商 宝宝'
+[2022-07-20 11:57:39,302 生草图片生成器] INFO: Message 199025254 triggered gen_high_eq.
+[2022-07-20 11:57:39,302 生草图片生成器] ERROR: <class 'FileNotFoundError'> occured when gen_high_eq handling message 199025254.
+[2022-07-20 11:57:39,302 生草图片生成器] ERROR: [Errno 2] No such file or directory: '/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/../images/high_eq_image.png'
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/msghandler.py", line 21, in handle_message
+    await service_func.func(bot, event)
+  File "/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/image_generator.py", line 73, in gen_high_eq
+    img_p = Image.open(high_eq_path)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/PIL/Image.py", line 3068, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/../images/high_eq_image.png'
+[2022-07-20 11:57:39,302 nonebot] INFO: Message 199025254 is ignored: Handled by Hoshino
+[2022-07-20 11:57:41,240 nonebot] INFO: Self: 2656914596, Message 2085221132 from 2283762767@[群:651925899]: '来一份萝莉色图'
+[2022-07-20 11:57:41,240 涩图] INFO: Message 2085221132 triggered send_search_setu.
+[2022-07-20 11:57:42,627 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2019/02/24/21/10/30/73371274_p0_master1200.jpg
+[2022-07-20 11:57:44,783 nonebot] INFO: Self: 2656914596, Message -1475573942 from 2283762767@[群:651925899]: '[CQ:image,file=259f16d49f149c1c21025ef7c4bd4022.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2167090167-259F16D49F149C1C21025EF7C4BD4022/0?term=3]'
+[2022-07-20 11:57:46,178 nonebot] INFO: Self: 2656914596, Message 1174595174 from 1239461504@[群:651925899]: '[CQ:reply,id=-319361379][CQ:at,qq=2656914596] [CQ:at,qq=2656914596] ？'
+[2022-07-20 11:57:46,402 nonebot] INFO: Message 2085221132 is ignored: Handled by Hoshino
+[2022-07-20 11:57:55,707 nonebot] INFO: Self: 2656914596, Message 822466288 from 2283762767@[群:651925899]: '好'
+[2022-07-20 11:58:15,804 nonebot] INFO: Self: 2656914596, Message -1352580269 from 1239461504@[群:651925899]: 'lssv'
+[2022-07-20 11:58:22,485 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_recall', 'time': 1658289495, 'self_id': 2656914596, 'group_id': 651925899, 'user_id': 1239461504, 'operator_id': 1239461504, 'message_id': -1352580269}>
+[2022-07-20 11:58:30,965 nonebot] INFO: Self: 2656914596, Message -1687945225 from 534193319@[群:315372702]: '接头 [CQ:image,file=9a73fac1419595a0996e2e64d868d519.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/534193319/3805372702-2441577582-9A73FAC1419595A0996E2E64D868D519/0?term=3]'
+[2022-07-20 11:58:30,965 生草图片生成器] INFO: Message -1687945225 triggered concat_head.
+[2022-07-20 11:58:31,480 生草图片生成器] ERROR: <class 'FileNotFoundError'> occured when concat_head handling message -1687945225.
+[2022-07-20 11:58:31,480 生草图片生成器] ERROR: [Errno 2] No such file or directory: '/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/../images/head/没找到头.png'
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/msghandler.py", line 21, in handle_message
+    await service_func.func(bot, event)
+  File "/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/image_generator.py", line 132, in concat_head
+    catimg = await concat_head_(img)
+  File "/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/image.py", line 91, in concat_head_
+    return Image.open(path.join(path.dirname(__file__), "../images/head/没找到头.png"))
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/PIL/Image.py", line 3068, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/newbot/FlyingMianBot/hoshino/modules/imagegenerator/src/../images/head/没找到头.png'
+[2022-07-20 11:58:31,481 nonebot] INFO: Message -1687945225 is ignored: Handled by Hoshino
+[2022-07-20 11:58:34,255 nonebot] INFO: Self: 2656914596, Message -664374331 from 1239461504@[群:651925899]: '114514'
+[2022-07-20 11:58:45,359 nonebot] INFO: Self: 2656914596, Message 912790249 from 534193319@[群:651925899]: '恶臭化 1919810'
+[2022-07-20 11:58:45,359 114514] INFO: Message 912790249 triggered homo.
+114514*(11-4-5+14)+(114*514+114*51*4+1145*(1+4)+11-4+5+1-4)
+[2022-07-20 11:58:45,506 nonebot] INFO: Self: 2656914596, Message 1097802367 from 1239461504@[群:651925899]: '[CQ:image,file=0f96ed2fce9cefb6500d8c405e914976.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2540858360-0F96ED2FCE9CEFB6500D8C405E914976/0?term=3]'
+[2022-07-20 11:58:45,671 nonebot] INFO: Message 912790249 is ignored: Handled by Hoshino
+[2022-07-20 11:58:53,971 nonebot] INFO: Self: 2656914596, Message -774881298 from 1512817267@[群:651925899]: '草'
+[2022-07-20 11:59:01,085 nonebot] INFO: Self: 2656914596, Message -1323846133 from 2283762767@[群:651925899]: '恶臭化 log12'
+[2022-07-20 11:59:01,085 114514] INFO: Message -1323846133 triggered homo.
+[2022-07-20 11:59:01,408 nonebot] INFO: Message -1323846133 is ignored: Handled by Hoshino
+[2022-07-20 11:59:11,452 nonebot] INFO: Self: 2656914596, Message 1595528999 from 2283762767@[群:651925899]: '恶臭化 31415926535870'
+[2022-07-20 11:59:11,453 114514] INFO: Message 1595528999 triggered homo.
+114514*114514*(114*5*1*4+114+5*1-4)+114514*(114*514+11*451*4+(11+451)*4+11+45-14)+(114*51*4+11451+4+11*4*(51-4)+11+45-1-4)
+[2022-07-20 11:59:11,736 nonebot] INFO: Message 1595528999 is ignored: Handled by Hoshino
+[2022-07-20 11:59:15,474 nonebot] INFO: Self: 2656914596, Message -1233489390 from 2283762767@[群:651925899]: 'nb'
+[2022-07-20 11:59:18,048 nonebot] INFO: Self: 2656914596, Message -1048755580 from 1239461504@[群:651925899]: '恶臭化24'
+[2022-07-20 11:59:18,048 114514] INFO: Message -1048755580 triggered homo.
+(1+14-5+14)
+[2022-07-20 11:59:18,380 nonebot] INFO: Message -1048755580 is ignored: Handled by Hoshino
+[2022-07-20 11:59:23,972 nonebot] INFO: Self: 2656914596, Message 796074920 from 1239461504@[群:651925899]: '焯'
+[2022-07-20 11:59:29,279 nonebot] INFO: Self: 2656914596, Message -1077133767 from 1512817267@[群:651925899]: '恶臭化1512817267'
+[2022-07-20 11:59:29,279 114514] INFO: Message -1077133767 triggered homo.
+114514*(11451+4+114*-5*(1-4)+11+4*5+14)+(114*514+114*51*4+114*(51-4)+(1-14)*(5-14))
+[2022-07-20 11:59:29,664 nonebot] INFO: Message -1077133767 is ignored: Handled by Hoshino
+[2022-07-20 11:59:40,668 nonebot] INFO: Self: 2656914596, Message -1707416120 from 1512817267@[群:651925899]: '原来我是homo（悲）'
+[2022-07-20 11:59:59,937 nonebot] INFO: Self: 2656914596, Message -314714786 from 1512817267@[群:651925899]: '来一份色图'
+[2022-07-20 11:59:59,937 涩图] INFO: Message -314714786 triggered send_search_setu.
+[2022-07-20 12:00:00,001 每日一涩] INFO: Scheduled job night start.
+[2022-07-20 12:00:00,002 hourcall] INFO: Scheduled job hour_call start.
+[2022-07-20 12:00:00,003 hourcall] INFO: Scheduled job hour_call completed.
+[2022-07-20 12:00:01,061 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/11/09/00/23/47/94012139_p0_master1200.jpg
+[2022-07-20 12:00:02,551 每日一涩] INFO: 群837114430 投递noon setu message成功 共1条消息
+[2022-07-20 12:00:03,271 nonebot] INFO: Message -314714786 is ignored: Handled by Hoshino
+[2022-07-20 12:00:03,347 每日一涩] INFO: 群651925899 投递noon setu message成功 共1条消息
+[2022-07-20 12:00:04,205 每日一涩] INFO: 群315372702 投递noon setu message成功 共1条消息
+[2022-07-20 12:00:05,064 每日一涩] INFO: 群434364039 投递noon setu message成功 共1条消息
+[2022-07-20 12:00:06,852 每日一涩] INFO: 群837114430 投递noon setu message成功 
+[2022-07-20 12:00:13,022 每日一涩] ERROR: 群651925899 投递noon setu message失败：<class 'aiocqhttp.exceptions.ActionFailed'>
+[2022-07-20 12:00:13,022 每日一涩] ERROR: <ActionFailed data=None, echo={'seq': 149}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/service.py", line 382, in broadcast_forward
+    await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/__init__.py", line 238, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 178, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 153, in call_action
+    return _handle_api_result(await
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 38, in _handle_api_result
+    raise ActionFailed(result=result)
+aiocqhttp.exceptions.ActionFailed: <ActionFailed data=None, echo={'seq': 149}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+[2022-07-20 12:00:18,988 每日一涩] ERROR: 群315372702 投递noon setu message失败：<class 'aiocqhttp.exceptions.ActionFailed'>
+[2022-07-20 12:00:18,988 每日一涩] ERROR: <ActionFailed data=None, echo={'seq': 150}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/service.py", line 382, in broadcast_forward
+    await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/__init__.py", line 238, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 178, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 153, in call_action
+    return _handle_api_result(await
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 38, in _handle_api_result
+    raise ActionFailed(result=result)
+aiocqhttp.exceptions.ActionFailed: <ActionFailed data=None, echo={'seq': 150}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+[2022-07-20 12:00:20,239 每日一涩] INFO: 群434364039 投递noon setu message成功 
+[2022-07-20 12:00:20,239 每日一涩] INFO: Scheduled job night completed.
+[2022-07-20 12:00:52,606 头像表情包] INFO: Message -1655234095 triggered gen_image_安全感
+[2022-07-20 12:00:56,694 nonebot] INFO: Self: 2656914596, Message -1655234095 from 1239461504@[群:651925899]: '/安全感[CQ:at,qq=1239461504] '
+[2022-07-20 12:01:24,780 头像表情包] INFO: Message 1935229181 triggered gen_image_为什么@我
+[2022-07-20 12:01:26,485 nonebot] INFO: Self: 2656914596, Message 1935229181 from 1239461504@[群:651925899]: '/为什么@我[CQ:at,qq=1239461504] '
+[2022-07-20 12:01:37,155 nonebot] INFO: Self: 2656914596, Message -1797165574 from 1154125005@[群:651925899]: '因缺斯汀'
+[2022-07-20 12:02:51,119 nonebot] INFO: Self: 2656914596, Message -471442068 from 2519463315@[群:651925899]: '[CQ:reply,id=-319361379][CQ:at,qq=2656914596] 草'
+[2022-07-20 12:02:54,188 nonebot] INFO: Self: 2656914596, Message -2094934903 from 2519463315@[群:651925899]: '哈哈哈哈哈'
+[2022-07-20 12:03:11,938 nonebot] INFO: Self: 2656914596, Message -198777825 from 1512817267@[群:651925899]: '冲得太快还行'
+[2022-07-20 12:03:27,128 nonebot] INFO: Self: 2656914596, Message 1831843237 from 2519463315@[群:651925899]: '随机丁真'
+[2022-07-20 12:03:27,128 随机丁真] INFO: Message 1831843237 triggered SentRandomDingzhen.
+/usr/newbot/flyingenv/lib64/python3.8/site-packages/nonebot/plugin.py:58: UserWarning: Plugin hoshino.modules.botmanage.help already exists
+  warnings.warn(f"Plugin {module_path} already exists")
+/usr/newbot/flyingenv/lib64/python3.8/site-packages/apscheduler/util.py:436: PytzUsageWarning: The localize method is no longer necessary, as this time zone supports the fold attribute (PEP 495). For more details on migrating to a PEP 495-compliant implementation, see https://pytz-deprecation-shim.readthedocs.io/en/latest/migration.html
+  return tzinfo.localize(dt)
+Run time of job "fetch_setu_process (trigger: interval[0:10:00], next run at: 2022-07-20 12:17:24 CST)" was missed by 0:03:35.988109
+[2022-07-20 12:11:00,900 nonebot] INFO: Self: 2656914596, Message 438863155 from 534193319@[群:651925899]: 'lssv'
+[2022-07-20 12:11:00,900 nonebot] INFO: Self: 2656914596, Message -2075389808 from 1239461504@[群:651925899]: '开启 随机丁真'
+[2022-07-20 12:11:00,900 nonebot] INFO: Self: 2656914596, Message -213180410 from 2519463315@[群:651925899]: '怎么没反应'
+[2022-07-20 12:11:00,900 nonebot] INFO: Self: 2656914596, Message 491077930 from 534193319@[群:651925899]: '可能卡了'
+[2022-07-20 12:11:00,904 nonebot] INFO: Self: 2656914596, Message -1912972101 from 1512817267@[群:651925899]: '你们冲的太快了'
+[2022-07-20 12:11:00,904 nonebot] INFO: Self: 2656914596, Message -84054995 from 1154125005@[群:651925899]: '恶臭化1145141919810'
+[2022-07-20 12:11:00,904 nonebot] INFO: Self: 2656914596, Message -1150848296 from 2519463315@[群:651925899]: '笑死了'
+[2022-07-20 12:11:00,905 114514] INFO: Message -84054995 triggered homo.
+114514*114514*(11+4*(5+14))+114514*(114*51*4+11451+4+1*(1+4)*514+11+4*5-14)+(114*514+114*51*4+1145*(1+4)+11-4+5+1-4)
+[2022-07-20 12:11:00,908 nonebot] INFO: Self: 2656914596, Message 577643362 from 1512817267@[群:651925899]: 'bot已经躺了'
+[2022-07-20 12:11:00,908 nonebot] INFO: Self: 2656914596, Message -888306089 from 2519463315@[群:651925899]: '来一份光腿涩图'
+[2022-07-20 12:11:00,909 涩图] INFO: Message -888306089 triggered send_search_setu.
+[2022-07-20 12:11:00,911 nonebot] INFO: Self: 2656914596, Message -1140148543 from 1239461504@[群:651925899]: 'bot被玩坏了'
+[2022-07-20 12:11:00,911 nonebot] INFO: Self: 2656914596, Message 621012859 from 2283762767@[群:651925899]: 'bot自己去冲了'
+[2022-07-20 12:11:00,911 nonebot] INFO: Self: 2656914596, Message 1376049133 from 2519463315@[群:651925899]: 'bot寄了'
+[2022-07-20 12:11:00,911 nonebot] INFO: Self: 2656914596, Message -1027880324 from 877031859@[群:651925899]: '刚来'
+[2022-07-20 12:11:00,911 nonebot] INFO: Self: 2656914596, Message -1245906198 from 877031859@[群:651925899]: '这是涩图群？'
+[2022-07-20 12:11:00,911 nonebot] INFO: Self: 2656914596, Message -713329905 from 2283762767@[群:651925899]: '是'
+[2022-07-20 12:11:00,914 nonebot] INFO: Self: 2656914596, Message -1568914535 from 2283762767@[群:651925899]: '来点色图'
+[2022-07-20 12:11:00,915 nonebot] INFO: Self: 2656914596, Message -1525577856 from 534193319@[群:651925899]: '等下 我修一下'
+[2022-07-20 12:11:00,916 nonebot] INFO: Notice: <Event, {'post_type': 'notice', 'notice_type': 'group_recall', 'time': 1658290002, 'self_id': 2656914596, 'group_id': 651925899, 'user_id': 1512817267, 'operator_id': 1512817267, 'message_id': -610206915}>
+[2022-07-20 12:11:00,916 涩图] INFO: Message -1568914535 triggered send_search_setu.
+[2022-07-20 12:11:00,933 nonebot] INFO: Self: 2656914596, Message 1260381868 from 2519463315@[群:651925899]: '这咋修'
+[2022-07-20 12:11:00,936 nonebot] INFO: Self: 2656914596, Message -610206915 from 1512817267@[群:651925899]: '可能大嘴巴子醒吧'
+[2022-07-20 12:11:00,936 nonebot] INFO: Self: 2656914596, Message -1398289493 from 1512817267@[群:651925899]: '可能大嘴巴子扇醒吧'
+[2022-07-20 12:11:00,939 nonebot] INFO: Self: 2656914596, Message -1991176102 from 2283762767@[群:651925899]: '草'
+[2022-07-20 12:11:00,939 nonebot] INFO: Self: 2656914596, Message 274219488 from 2283762767@[群:651925899]: '实体bot是吧'
+[2022-07-20 12:11:00,939 nonebot] INFO: Self: 2656914596, Message 1734308214 from 2519463315@[群:651925899]: '阻冲之'
+[2022-07-20 12:11:00,939 nonebot] INFO: Self: 2656914596, Message -113515307 from 1512817267@[群:651925899]: '其实那个bot是有个人24小时开着ps和p站'
+[2022-07-20 12:11:00,943 nonebot] INFO: Self: 2656914596, Message -1908616125 from 1512817267@[群:651925899]: '疯狂p图'
+[2022-07-20 12:11:00,943 nonebot] INFO: Self: 2656914596, Message 389383673 from 1512817267@[群:651925899]: '发图'
+[2022-07-20 12:11:00,943 nonebot] INFO: Self: 2656914596, Message -2020960152 from 1239461504@[群:651925899]: '确信'
+[2022-07-20 12:11:00,946 nonebot] INFO: Self: 2656914596, Message -414379635 from 2519463315@[群:651925899]: 'bot好了踢我一脚'
+[2022-07-20 12:11:00,946 nonebot] INFO: Self: 2656914596, Message -1874190053 from 2519463315@[群:651925899]: '我先去冲'
+[2022-07-20 12:11:00,946 nonebot] INFO: Self: 2656914596, Message 2118402103 from 412704308@[群:651925899]: '那我觉得我除了不会p图跟bot差不多'
+[2022-07-20 12:11:00,949 nonebot] INFO: Self: 2656914596, Message -1298175036 from 534193319@[群:434364039]: 'lssv'
+[2022-07-20 12:11:00,949 nonebot] INFO: Self: 2656914596, Message -534719084 from 412704308@[群:651925899]: '我也24h高强度冲浪'
+[2022-07-20 12:11:00,949 nonebot] INFO: Self: 2656914596, Message -1758993150 from 2519463315@[群:651925899]: '原来你也玩碧蓝档案'
+[2022-07-20 12:11:00,952 nonebot] INFO: Self: 2656914596, Message 237941944 from 1154125005@[群:651925899]: '我的评价是'
+[2022-07-20 12:11:00,952 nonebot] INFO: Self: 2656914596, Message 2032763950 from 1154125005@[群:651925899]: '带我'
+[2022-07-20 12:11:00,953 nonebot] INFO: Self: 2656914596, Message 572552789 from 534193319@[群:434364039]: 'lssv。'
+[2022-07-20 12:11:00,955 nonebot] INFO: Self: 2656914596, Message 1428637379 from 534193319@[群:434364039]: 'lssv'
+[2022-07-20 12:11:00,955 nonebot] INFO: Self: 2656914596, Message -1634621143 from 412704308@[群:651925899]: '碧蓝档案我本来只是看涩图的'
+[2022-07-20 12:11:00,955 nonebot] INFO: Self: 2656914596, Message 399654356 from 412704308@[群:651925899]: '结果发现涩图太好看了'
+[2022-07-20 12:11:00,959 nonebot] INFO: Self: 2656914596, Message -1898222482 from 412704308@[群:651925899]: '就入坑了'
+[2022-07-20 12:11:00,959 nonebot] INFO: Self: 2656914596, Message -1419517272 from 1340615572@[群:434364039]: '？'
+[2022-07-20 12:11:00,959 nonebot] INFO: Self: 2656914596, Message -102998792 from 2519463315@[群:651925899]: '我也是'
+[2022-07-20 12:11:00,959 nonebot] INFO: Self: 2656914596, Message -597372354 from 1340615572@[群:434364039]: '智械危机？'
+[2022-07-20 12:11:00,959 nonebot] INFO: Self: 2656914596, Message 1740163419 from 2519463315@[群:651925899]: '好家伙'
+[2022-07-20 12:11:01,064 nonebot] INFO: Self: 2656914596, Message 281016781 from 1154125005@[群:651925899]: '好烧'
+[2022-07-20 12:11:01,064 nonebot] INFO: Self: 2656914596, Message -1984518025 from 1154125005@[群:651925899]: '好烧哇'
+[2022-07-20 12:11:01,064 nonebot] INFO: Self: 2656914596, Message -21915423 from 412704308@[群:651925899]: '[CQ:video,file=be9effedf32ae08e83951ba3e9d1c03b.video,url=http://203.205.248.81:80/qqdownload?ver=537097188&amp;rkey=3081f90201010481f13081ee02010102010002049e5d4ca40481a2333034663032303130303034333433303332303230313030303230343138393935653334303230333761316166663032303430656566623837353032303436326437383033383034313062653965666665646633326165303865383339353162613365396431633033623032303130303032303130303034313430303030303030383636363936633635373437393730363530303030303030343331333033303331020462d7803904350000000866696c657479706500000004313030330000000b646f776e656e63727970740000000130000000047175696300000001300400&amp;filetype=1003&amp;videotype=1&amp;subvideotype=0&amp;term=unknow]'
+[2022-07-20 12:11:01,066 nonebot] INFO: Self: 2656914596, Message -620161497 from 534193319@[群:434364039]: 'lssv'
+[2022-07-20 12:11:01,066 nonebot] INFO: Self: 2656914596, Message 161794188 from 2283762767@[群:651925899]: '色图，来！'
+[2022-07-20 12:11:01,067 nonebot] INFO: Self: 2656914596, Message 1782739388 from 1239461504@[群:651925899]: '[CQ:image,file=80c8c08f5d66fe5fa5c742fbfdaa6d22.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2267863967-80C8C08F5D66FE5FA5C742FBFDAA6D22/0?term=3]'
+[2022-07-20 12:11:01,099 nonebot] INFO: Self: 2656914596, Message 1846445424 from 1239461504@[群:651925899]: '[CQ:image,file=0f96ed2fce9cefb6500d8c405e914976.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-3043829722-0F96ED2FCE9CEFB6500D8C405E914976/0?term=3]'
+[2022-07-20 12:11:01,122 nonebot] INFO: Self: 2656914596, Message -259151618 from 2283762767@[群:651925899]: '[CQ:image,file=7ed15f77af15cf7416e8779cd65f9b17.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2216018293-7ED15F77AF15CF7416E8779CD65F9B17/0?term=3]'
+[2022-07-20 12:11:01,135 nonebot] INFO: Self: 2656914596, Message 1613935983 from 1512817267@[群:651925899]: '[CQ:image,file=7ed15f77af15cf7416e8779cd65f9b17.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1512817267/651925899-3173080395-7ED15F77AF15CF7416E8779CD65F9B17/0?term=3]'
+[2022-07-20 12:11:01,141 nonebot] INFO: Self: 2656914596, Message -27909940 from 1512817267@[群:651925899]: '[CQ:image,file=feadf41e5af86621efbf48b70145dfab.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1512817267/651925899-2479091038-FEADF41E5AF86621EFBF48B70145DFAB/0?term=3]'
+[2022-07-20 12:11:01,174 nonebot] INFO: Self: 2656914596, Message -770263274 from 877031859@[群:651925899]: '[CQ:image,file=dbb137163817d40161c12d50da041026.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/877031859/651925899-2949155175-DBB137163817D40161C12D50DA041026/0?term=3]'
+[2022-07-20 12:11:01,297 nonebot] INFO: Self: 2656914596, Message 1008260666 from 2283762767@[群:651925899]: '[CQ:image,file=1547fc6b7a3d9cba4b0d27b118068b99.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-3167549471-1547FC6B7A3D9CBA4B0D27B118068B99/0?term=3]'
+[2022-07-20 12:11:01,421 nonebot] INFO: Self: 2656914596, Message 1282548405 from 1239461504@[群:651925899]: '[CQ:image,file=f52f7dcbe06ad4b49ba9e814a0ebe8bd.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2854373005-F52F7DCBE06AD4B49BA9E814A0EBE8BD/0?term=3]'
+[2022-07-20 12:11:01,421 nonebot] INFO: Self: 2656914596, Message 997528099 from 1154125005@[群:651925899]: '[CQ:image,file=054f7510bd63247dcf54877cddb4f060.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1154125005/651925899-2946362800-054F7510BD63247DCF54877CDDB4F060/0?term=3]'
+[2022-07-20 12:11:01,421 nonebot] INFO: Self: 2656914596, Message -376006209 from 1239461504@[群:651925899]: '[CQ:image,file=f7ba643a4d43214eae466b5d17de2349.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2382451651-F7BA643A4D43214EAE466B5D17DE2349/0?term=3]'
+[2022-07-20 12:11:01,470 nonebot] INFO: Message -84054995 is ignored: Handled by Hoshino
+[2022-07-20 12:11:01,472 nonebot] INFO: Self: 2656914596, Message 1432949748 from 1154125005@[群:651925899]: '[CQ:image,file=dc3c1d5f2d1fcce330cdad820dc2966f.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1154125005/651925899-2934393597-DC3C1D5F2D1FCCE330CDAD820DC2966F/0?term=3]'
+[2022-07-20 12:11:02,318 nonebot] INFO: Message 438863155 is handled as a command
+[2022-07-20 12:11:02,320 nonebot] INFO: Self: 2656914596, Message 1624575298 from 1154125005@[群:651925899]: '[CQ:image,file=b8aceb1e41662c37788ceb5829eac9ba.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1154125005/651925899-2479416183-B8ACEB1E41662C37788CEB5829EAC9BA/0?term=3]'
+[2022-07-20 12:11:02,320 nonebot] INFO: Self: 2656914596, Message -1749000913 from 2283762767@[群:651925899]: '[CQ:image,file=d51dc4761a02af2b5a09cf95e709ec9f.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2431211617-D51DC4761A02AF2B5A09CF95E709EC9F/0?term=3]'
+[2022-07-20 12:11:02,320 nonebot] INFO: Self: 2656914596, Message 2043558915 from 2283762767@[群:651925899]: '[CQ:image,file=2a3485b7ceca9190a607aae0e593e6b7.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2244310885-2A3485B7CECA9190A607AAE0E593E6B7/0?term=3]'
+[2022-07-20 12:11:02,320 nonebot] INFO: Self: 2656914596, Message -523801159 from 2283762767@[群:651925899]: '[CQ:image,file=b7d32d48edee03478a4e6774977b2c5b.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2167162506-B7D32D48EDEE03478A4E6774977B2C5B/0?term=3]'
+[2022-07-20 12:11:03,666 nonebot] INFO: Message -2075389808 is handled as a command
+[2022-07-20 12:11:03,667 nonebot] INFO: Message -1298175036 is handled as a command
+[2022-07-20 12:11:03,667 nonebot] INFO: Message 1831843237 is ignored: Handled by Hoshino
+[2022-07-20 12:11:03,668 nonebot] INFO: Self: 2656914596, Message 420066790 from 2283762767@[群:651925899]: '[CQ:image,file=37e3a64481a471b3e715873577fc88c9.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2290170471-37E3A64481A471B3E715873577FC88C9/0?term=3]'
+[2022-07-20 12:11:03,668 nonebot] INFO: Self: 2656914596, Message -866106802 from 412704308@[群:651925899]: '[CQ:image,file=801d830a88c259fe468b84d628d64f83.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/412704308/651925899-3167315656-801D830A88C259FE468B84D628D64F83/0?term=3]'
+[2022-07-20 12:11:03,669 nonebot] INFO: Self: 2656914596, Message 248056981 from 2283762767@[群:651925899]: '[CQ:image,file=7bb8b516ceaa8be330bfe1c4964cf936.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2650000747-7BB8B516CEAA8BE330BFE1C4964CF936/0?term=3]'
+[2022-07-20 12:11:03,669 nonebot] INFO: Self: 2656914596, Message 155414689 from 412704308@[群:651925899]: 'PID:我忘了\n[CQ:image,file=66a7b39239abf83c109b51f469a06d67.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/412704308/651925899-2312964826-66A7B39239ABF83C109B51F469A06D67/0?term=3]'
+[2022-07-20 12:11:03,669 nonebot] INFO: Self: 2656914596, Message 2124675098 from 2283762767@[群:651925899]: '[CQ:image,file=6569feb8a077c6b72abc4bf114d85409.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2283762767/651925899-2606744931-6569FEB8A077C6B72ABC4BF114D85409/0?term=3]'
+[2022-07-20 12:11:03,968 nonebot] INFO: Message 1428637379 is handled as a command
+[2022-07-20 12:11:04,453 nonebot] INFO: Message -620161497 is handled as a command
+[2022-07-20 12:11:04,670 nonebot] INFO: Message -1568914535 is ignored: Handled by Hoshino
+[2022-07-20 12:11:08,020 nonebot] INFO: Message -888306089 is ignored: Handled by Hoshino
+[2022-07-20 12:11:08,036 nonebot] INFO: Self: 2656914596, Message -1365038748 from 2325809659@[群:651925899]: '？'
+[2022-07-20 12:11:11,357 nonebot] INFO: Self: 2656914596, Message -643556878 from 2519463315@[群:651925899]: '？'
+[2022-07-20 12:11:15,178 nonebot] INFO: Self: 2656914596, Message 1085098056 from 2519463315@[群:651925899]: '突然复活'
+[2022-07-20 12:11:18,438 nonebot] INFO: Self: 2656914596, Message 933918942 from 2283762767@[群:651925899]: '[CQ:reply,id=-21915423][CQ:at,qq=412704308] [CQ:at,qq=412704308] 笑死了'
+[2022-07-20 12:11:28,326 nonebot] INFO: Self: 2656914596, Message -1491770033 from 1512817267@[群:651925899]: '随机丁真'
+[2022-07-20 12:11:28,327 随机丁真] INFO: Message -1491770033 triggered SentRandomDingzhen.
+[2022-07-20 12:11:30,284 nonebot] INFO: Message -1491770033 is ignored: Handled by Hoshino
+[2022-07-20 12:11:31,642 nonebot] INFO: Self: 2656914596, Message -1328161732 from 2519463315@[群:651925899]: '[CQ:reply,id=-1446056579][CQ:at,qq=2656914596] 这个我有了'
+[2022-07-20 12:11:43,426 nonebot] INFO: Self: 2656914596, Message -942478166 from 412704308@[群:651925899]: '[CQ:image,file=475ebf6412e314281cc298e6d3d1089c.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/412704308/651925899-2483487288-475EBF6412E314281CC298E6D3D1089C/0?term=3]'
+[2022-07-20 12:11:48,639 nonebot] INFO: Self: 2656914596, Message 1591459088 from 2283762767@[群:651925899]: '随机丁真'
+[2022-07-20 12:11:48,640 随机丁真] INFO: Message 1591459088 triggered SentRandomDingzhen.
+[2022-07-20 12:11:49,941 nonebot] INFO: Message 1591459088 is ignored: Handled by Hoshino
+[2022-07-20 12:11:58,118 nonebot] INFO: Self: 2656914596, Message -1212671963 from 2283762767@[群:651925899]: '太恶心了'
+[2022-07-20 12:12:09,240 nonebot] INFO: Self: 2656914596, Message -1061214029 from 412704308@[群:651925899]: '[CQ:image,file=9509c05717a468f9c0c97754e375a66b.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/412704308/651925899-3083082203-9509C05717A468F9C0C97754E375A66B/0?term=3]'
+[2022-07-20 12:12:10,955 nonebot] INFO: Self: 2656914596, Message 1505130761 from 1239461504@[群:651925899]: '随机丁真'
+[2022-07-20 12:12:10,955 随机丁真] INFO: Message 1505130761 triggered SentRandomDingzhen.
+[2022-07-20 12:12:12,822 nonebot] INFO: Message 1505130761 is ignored: Handled by Hoshino
+[2022-07-20 12:12:14,960 nonebot] INFO: Self: 2656914596, Message -1106357234 from 1154125005@[群:651925899]: '随机丁真'
+[2022-07-20 12:12:14,961 随机丁真] INFO: Message -1106357234 triggered SentRandomDingzhen.
+[2022-07-20 12:12:16,184 nonebot] INFO: Message -1106357234 is ignored: Handled by Hoshino
+[2022-07-20 12:12:17,843 nonebot] INFO: Self: 2656914596, Message -1678209025 from 412704308@[群:651925899]: '[CQ:image,file=9624032aba834ddf91d2fddac8138000.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/412704308/651925899-2149650991-9624032ABA834DDF91D2FDDAC8138000/0?term=3]'
+[2022-07-20 12:12:18,266 nonebot] INFO: Self: 2656914596, Message -318783639 from 1239461504@[群:651925899]: '[CQ:image,file=f52f7dcbe06ad4b49ba9e814a0ebe8bd.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2841226137-F52F7DCBE06AD4B49BA9E814A0EBE8BD/0?term=3]'
+[2022-07-20 12:12:30,403 头像表情包] INFO: Message 1979117267 triggered gen_image_啾啾
+[2022-07-20 12:12:31,593 nonebot] INFO: Self: 2656914596, Message 49405509 from 2519463315@[群:651925899]: '[CQ:image,file=1684c2fef17f16ded4afc562b6d6d6bc.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-3144842873-1684C2FEF17F16DED4AFC562B6D6D6BC/0?term=3]'
+[2022-07-20 12:12:32,361 nonebot] INFO: Self: 2656914596, Message -1667937306 from 2519463315@[群:651925899]: '[CQ:image,file=87f7cdbde8a75a68f536ccf857d32f33.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2162927744-87F7CDBDE8A75A68F536CCF857D32F33/0?term=3]'
+[2022-07-20 12:12:32,842 nonebot] INFO: Self: 2656914596, Message -342721680 from 2519463315@[群:651925899]: '[CQ:image,file=89db72c6e8e40ed994b8899431955683.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2372410815-89DB72C6E8E40ED994B8899431955683/0?term=3]'
+[2022-07-20 12:12:33,522 nonebot] INFO: Self: 2656914596, Message 1922771658 from 2519463315@[群:651925899]: '[CQ:image,file=55f89c1a64be5d36af97b557bbc702d7.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2696357009-55F89C1A64BE5D36AF97B557BBC702D7/0?term=3]'
+[2022-07-20 12:12:33,758 nonebot] INFO: Self: 2656914596, Message 94116444 from 2519463315@[群:651925899]: '[CQ:image,file=98bb945abdadef29b71aad02b526451d.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-3068462546-98BB945ABDADEF29B71AAD02B526451D/0?term=3]'
+[2022-07-20 12:12:34,268 nonebot] INFO: Self: 2656914596, Message -1792866355 from 2519463315@[群:651925899]: '[CQ:image,file=8e4b1a241e91b2e176270eb604c69266.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2673424117-8E4B1A241E91B2E176270EB604C69266/0?term=3]'
+[2022-07-20 12:12:35,183 nonebot] INFO: Self: 2656914596, Message -500943013 from 2519463315@[群:651925899]: '[CQ:image,file=7c69f382e902a59fe1151146ee25532c.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2407377569-7C69F382E902A59FE1151146EE25532C/0?term=3]'
+[2022-07-20 12:12:35,582 nonebot] INFO: Self: 2656914596, Message -2099003714 from 2519463315@[群:651925899]: '[CQ:image,file=597e2aaf3d9087a4e2665370a4ff535b.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2768368329-597E2AAF3D9087A4E2665370A4FF535B/0?term=3]'
+[2022-07-20 12:12:36,215 nonebot] INFO: Self: 2656914596, Message -169570776 from 2519463315@[群:651925899]: '[CQ:image,file=28e3cda21be8d9f3890c4f2363df177d.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2572835895-28E3CDA21BE8D9F3890C4F2363DF177D/0?term=3]'
+[2022-07-20 12:12:36,591 nonebot] INFO: Self: 2656914596, Message 1827528594 from 2519463315@[群:651925899]: '[CQ:image,file=62cdc425b9e8bfefe6ed5ceb54922da7.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2580887839-62CDC425B9E8BFEFE6ED5CEB54922DA7/0?term=3]'
+[2022-07-20 12:12:37,360 nonebot] INFO: Self: 2656914596, Message 468381444 from 2519463315@[群:651925899]: '[CQ:image,file=d2e2291e4340fac1ed50273ec686866c.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2802177020-D2E2291E4340FAC1ED50273EC686866C/0?term=3]'
+[2022-07-20 12:12:38,097 nonebot] INFO: Self: 2656914596, Message -2054260057 from 2519463315@[群:651925899]: '[CQ:image,file=c6b70855aff1631703a6347ba22b3c18.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2895879178-C6B70855AFF1631703A6347BA22B3C18/0?term=3]'
+[2022-07-20 12:12:38,935 nonebot] INFO: Self: 2656914596, Message -225883599 from 2519463315@[群:651925899]: '[CQ:image,file=9393e78171f9b9da76f90028d188ca0c.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-3151319107-9393E78171F9B9DA76F90028D188CA0C/0?term=3]'
+[2022-07-20 12:12:39,054 nonebot] INFO: Self: 2656914596, Message 1979117267 from 1239461504@[群:651925899]: '/啾啾[CQ:at,qq=1239461504] '
+[2022-07-20 12:12:39,206 nonebot] INFO: Self: 2656914596, Message 1803557771 from 2519463315@[群:651925899]: '[CQ:image,file=08ecbfe1fd7d6e5dc75e71a78756284e.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2790027160-08ECBFE1FD7D6E5DC75E71A78756284E/0?term=3]'
+[2022-07-20 12:12:39,928 nonebot] INFO: Self: 2656914596, Message -1942473076 from 2519463315@[群:651925899]: '[CQ:image,file=381dc1fe164890288a53db8c9f8f9c4e.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-3128512234-381DC1FE164890288A53DB8C9F8F9C4E/0?term=3]'
+[2022-07-20 12:12:41,291 nonebot] INFO: Self: 2656914596, Message -79755750 from 2519463315@[群:651925899]: '[CQ:image,file=88d4a9858196696b5afdf9b19f87f7c9.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2973977217-88D4A9858196696B5AFDF9B19F87F7C9/0?term=3]'
+[2022-07-20 12:12:41,434 nonebot] INFO: Self: 2656914596, Message -845010823 from 2519463315@[群:651925899]: '[CQ:image,file=403447b9fc1f42eb11526df4c117bbaa.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2802782339-403447B9FC1F42EB11526DF4C117BBAA/0?term=3]'
+[2022-07-20 12:12:41,492 nonebot] INFO: Self: 2656914596, Message -1163585297 from 2519463315@[群:651925899]: '[CQ:image,file=f62e21f7d10b292c2cb444dc4ee447e4.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2520504822-F62E21F7D10B292C2CB444DC4EE447E4/0?term=3]'
+[2022-07-20 12:12:42,342 nonebot] INFO: Self: 2656914596, Message 598493525 from 2519463315@[群:651925899]: '[CQ:image,file=0340faf5178512ca53777f7de66c4a1f.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2955665796-0340FAF5178512CA53777F7DE66C4A1F/0?term=3]'
+[2022-07-20 12:12:42,471 nonebot] INFO: Self: 2656914596, Message 1420523971 from 2519463315@[群:651925899]: '[CQ:image,file=b18d99ae3cda4ef64e4ab9136a755b76.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2910270826-B18D99AE3CDA4EF64E4AB9136A755B76/0?term=3]'
+[2022-07-20 12:12:46,918 nonebot] INFO: Self: 2656914596, Message -892343200 from 1239461504@[群:651925899]: '焯'
+[2022-07-20 12:12:53,358 nonebot] INFO: Self: 2656914596, Message -1110909706 from 412704308@[群:651925899]: '这位更是纯真'
+[2022-07-20 12:12:58,351 nonebot] INFO: Self: 2656914596, Message 616664396 from 1239461504@[群:651925899]: '[CQ:image,file=f52f7dcbe06ad4b49ba9e814a0ebe8bd.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2605265274-F52F7DCBE06AD4B49BA9E814A0EBE8BD/0?term=3]'
+[2022-07-20 12:13:07,160 nonebot] INFO: Self: 2656914596, Message 1405533658 from 2519463315@[群:651925899]: '不吹不黑'
+[2022-07-20 12:13:14,755 nonebot] INFO: Self: 2656914596, Message -1015439285 from 2519463315@[群:651925899]: '[CQ:image,file=65b617cf7f7e131577ad0df08d047547.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-3103322076-65B617CF7F7E131577AD0DF08D047547/0?term=3]'
+[2022-07-20 12:14:35,392 头像表情包] INFO: Message -1266773795 triggered gen_image_关注
+[2022-07-20 12:14:37,988 nonebot] INFO: Self: 2656914596, Message -1266773795 from 1239461504@[群:651925899]: '/关注[CQ:at,qq=1239461504] '
+[2022-07-20 12:14:42,117 nonebot] INFO: Self: 2656914596, Message -1547818578 from 1239461504@[群:651925899]: '焯'
+[2022-07-20 12:14:48,382 nonebot] INFO: Self: 2656914596, Message 985102356 from 1239461504@[群:651925899]: '[CQ:image,file=cd3188b5a412ab92a2e82943d749adc3.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2981616274-CD3188B5A412AB92A2E82943D749ADC3/0?term=3]'
+[2022-07-20 12:15:10,707 nonebot] INFO: Self: 2656914596, Message 1303398530 from 2519463315@[群:651925899]: '1软等于多少日元'
+[2022-07-20 12:15:18,483 头像表情包] INFO: Message -741024479 triggered gen_image_关注
+[2022-07-20 12:15:21,633 nonebot] INFO: Self: 2656914596, Message -741024479 from 1512817267@[群:651925899]: '/关注[CQ:at,qq=1512817267] '
+[2022-07-20 12:15:30,625 nonebot] INFO: Self: 2656914596, Message 1037745165 from 2519463315@[群:651925899]: '1人民币等于多少日元'
+[2022-07-20 12:15:33,696 头像表情包] INFO: Message 1256033435 triggered gen_image_需要
+[2022-07-20 12:15:36,411 nonebot] INFO: Self: 2656914596, Message 1256033435 from 1239461504@[群:651925899]: '/需要[CQ:at,qq=1239461504] '
+[2022-07-20 12:15:41,785 nonebot] INFO: Self: 2656914596, Message -1385848420 from 1239461504@[群:651925899]: '[CQ:image,file=f52f7dcbe06ad4b49ba9e814a0ebe8bd.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2743535004-F52F7DCBE06AD4B49BA9E814A0EBE8BD/0?term=3]'
+[2022-07-20 12:15:43,416 nonebot] INFO: Self: 2656914596, Message -7058693 from 2519463315@[群:651925899]: '不吊我'
+[2022-07-20 12:15:47,834 nonebot] INFO: Self: 2656914596, Message -2003600787 from 2519463315@[群:651925899]: '[CQ:image,file=6aa1949219f5f01c419641e14da25e10.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/2519463315/651925899-2608188416-6AA1949219F5F01C419641E14DA25E10/0?term=3]'
+[2022-07-20 12:16:11,170 头像表情包] INFO: Message 295316439 triggered gen_image_垃圾
+[2022-07-20 12:16:32,302 nonebot] INFO: Self: 2656914596, Message 295316439 from 1239461504@[群:651925899]: '/垃圾[CQ:at,qq=1239461504] '
+[2022-07-20 12:17:00,706 nonebot] INFO: Self: 2656914596, Message -117862686 from 2519463315@[群:651925899]: '随机丁真'
+[2022-07-20 12:17:00,706 随机丁真] INFO: Message -117862686 triggered SentRandomDingzhen.
+[2022-07-20 12:17:02,404 nonebot] INFO: Message -117862686 is ignored: Handled by Hoshino
+[2022-07-20 12:17:04,956 nonebot] INFO: Self: 2656914596, Message 385347534 from 534193319@[群:651925899]: '忘装了 '
+[2022-07-20 12:17:14,580 nonebot] INFO: Self: 2656914596, Message 1643175768 from 534193319@[群:651925899]: '停一下机'
+[2022-07-20 12:17:15,146 头像表情包] INFO: Message -246431031 triggered gen_image_国旗
+[2022-07-20 12:17:17,266 nonebot] INFO: Self: 2656914596, Message -2042039713 from 2519463315@[群:651925899]: '草'
+[2022-07-20 12:17:17,922 nonebot] INFO: Self: 2656914596, Message -246431031 from 1239461504@[群:651925899]: '/国旗[CQ:at,qq=1239461504] '
+[2022-07-20 12:17:24,910 涩图] INFO: Scheduled job fetch_setu_process start.
+[2022-07-20 12:17:24,910 hoshino] INFO: [INFO]fetch lolicon setu
+[2022-07-20 12:17:25,518 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/04/22/07/12/91728297_p0_master1200.jpg
+[2022-07-20 12:17:26,194 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/10/16/07/04/27/93472467_p0_master1200.jpg
+[2022-07-20 12:17:26,907 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/03/27/22/56/30/97222270_p0_master1200.jpg
+[2022-07-20 12:17:27,512 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/07/24/00/02/08/91450112_p0_master1200.jpg
+[2022-07-20 12:17:28,117 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2020/05/18/22/48/59/81672126_p0_master1200.jpg
+[2022-07-20 12:17:28,719 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/03/24/16/24/06/97139657_p0_master1200.jpg
+[2022-07-20 12:17:29,437 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2021/08/15/04/29/57/91989010_p1_master1200.jpg
+[2022-07-20 12:17:29,441 nonebot] INFO: Self: 2656914596, Message -1853338836 from 534193319@[群:651925899]: '禁用 每日一涩'
+[2022-07-20 12:17:29,693 每日一涩] INFO: Service 每日一涩 is disabled at group 651925899
+[2022-07-20 12:17:29,694 nonebot] INFO: Message -1853338836 is handled as a command
+[2022-07-20 12:17:30,038 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/01/08/00/07/24/95370472_p0_master1200.jpg
+[2022-07-20 12:17:30,767 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/03/19/00/00/15/97006510_p0_master1200.jpg
+[2022-07-20 12:17:31,332 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/05/18/00/09/31/98419986_p0_master1200.jpg
+[2022-07-20 12:17:31,978 涩图] INFO: Scheduled job fetch_setu_process completed.
+[2022-07-20 12:17:33,847 nonebot] INFO: Self: 2656914596, Message 2139499008 from 2519463315@[群:651925899]: '[CQ:reply,id=-1879130508][CQ:at,qq=2656914596] 真阴间啊'

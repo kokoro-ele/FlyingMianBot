@@ -379,6 +379,7 @@ class Service:
         groups = await self.get_enable_groups()
         for gid,_ in groups.items():
             try:
+                    await asyncio.sleep(0.6)
                     await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
                     self.logger.info(f"群{gid} 投递{TAG}成功 ")
             except Exception as e:

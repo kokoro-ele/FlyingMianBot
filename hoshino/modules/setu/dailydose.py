@@ -47,7 +47,7 @@ async def day():
     except:   
         await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
         
-@sv.scheduled_job('cron', hour="12",minute="0")
+@sv.scheduled_job('cron', hour="13",minute="00")
 #@sv.on_fullmatch('mmm')
 async def night():
     forward_msg = await get_img('雪糕')    
