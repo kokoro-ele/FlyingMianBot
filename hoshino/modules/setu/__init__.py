@@ -37,7 +37,7 @@ config_default = {
 		"mode": 2,  # 0禁用 1无缓存 2有缓存在线 3有缓存离线
 		"r18": False,  # R18图开关
 		"use_thumb": True,  # 选取小图开关
-		"pixiv_direct": False,  # 是否直连pixiv
+		"pixiv_direct": True,  # 是否直连pixiv
 		"proxy_site": "https://i.pixiv.re",  # pixiv代理地址
 		"local_proxy": ""  # lolicon代理地址
 	},
@@ -47,7 +47,7 @@ config_default = {
 		"ranking_mode": "daily",  # 排行榜模式
 		"per_page": 25,  # 一米哇甘耐
 		"use_thumb": True,  # 选取小图开关
-		"pixiv_direct": False,  # 是否直连pixiv
+		"pixiv_direct": True,  # 是否直连pixiv
 		"pixiv_proxy": "https://i.pixiv.re",  # pixiv代理地址
 		"acggov_proxy": ""  # acggov代理地址
 	}

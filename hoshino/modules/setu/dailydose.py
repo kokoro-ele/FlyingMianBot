@@ -12,7 +12,7 @@ setu set day/night xxx
 '''
 sv = Service('每日一涩', enable_on_default=False, help_=sv_help)
 
-@sv.scheduled_job('cron', hour="8",minute="0")
+@sv.scheduled_job('cron', hour="9",minute="7")
 #@sv.on_fullmatch('mmm')
 async def wtf():
 	num = 1
@@ -38,8 +38,8 @@ async def wtf():
 				"content": msg
 			}
 		})
-	await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
-	await sv.broadcast_forward(msgs = forward_msg, TAG = 'day')
+        await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
+        await sv.broadcast_forward(msgs = forward_msg, TAG = 'day')
 
 @sv.scheduled_job('cron', hour="20",minute="0")
 #@sv.on_fullmatch('mmm')
@@ -67,5 +67,5 @@ async def wtf():
 				"content": msg
 			}
 		})
-	await sv.broadcast('黑夜啦,该看黑丝啦', 'day setu message')
-	await sv.broadcast_forward(msgs = forward_msg, TAG = 'day')
+	    await sv.broadcast('黑夜啦,该看黑丝啦', 'day setu message')
+	    await sv.broadcast_forward(msgs = forward_msg, TAG = 'day')
