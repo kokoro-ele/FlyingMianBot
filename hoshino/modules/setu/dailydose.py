@@ -37,7 +37,7 @@ async def get_img(keyword):
         })
     return forward_msg
 
-@sv.scheduled_job('cron', hour="9",minute="53")
+@sv.scheduled_job('cron', hour="8",minute="00")
 #@sv.on_fullmatch('mmm')
 async def day():
     forward_msg = await get_img('白丝')
