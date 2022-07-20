@@ -13,7 +13,7 @@ from .download import DownloadError, ResourceError
 from .models import UserInfo
 from .utils import help_image
 
-sv = Service("头像表情包")
+sv = Service("头像表情包",help_="请输入 帮助头像表情包")
 
 
 def bytesio2b64(im: BytesIO) -> str:
@@ -21,7 +21,7 @@ def bytesio2b64(im: BytesIO) -> str:
     return f"base64://{b64encode(im).decode()}"
 
 
-@sv.on_fullmatch("头像表情包")
+@sv.on_fullmatch("帮助头像表情包")
 async def help(bot: HoshinoBot, ev: CQEvent):
     im = await help_image(commands)
     await bot.send(ev, MessageSegment.image(bytesio2b64(im)))
