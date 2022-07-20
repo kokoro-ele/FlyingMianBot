@@ -377,11 +377,13 @@ class Service:
     async def broadcast_forward(self, msgs, TAG=''):
         bot = self.bot
         groups = await self.get_enable_groups()
+        i = 4
         for gid,_ in groups.items():
             try:
-                    await asyncio.sleep(0.6)
+                    await asyncio.sleep(i)
                     await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
                     self.logger.info(f"群{gid} 投递{TAG}成功 ")
+                    i += 1
             except Exception as e:
                 self.logger.error(f"群{gid} 投递{TAG}失败：{type(e)}")
                 self.logger.exception(e)

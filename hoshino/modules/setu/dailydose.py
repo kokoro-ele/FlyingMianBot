@@ -1,4 +1,5 @@
 import random
+import asyncio
 from datetime import datetime
 import hoshino
 from hoshino import Service
@@ -41,25 +42,28 @@ async def get_img(keyword):
 async def day():
     forward_msg = await get_img('白丝')
     try:
+        await asyncio.sleep(0.8)
         await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
         await sv.broadcast_forward(forward_msg, TAG = 'day')
     except:   
         await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
         
-@sv.scheduled_job('cron', hour="13",minute="00")
+@sv.scheduled_job('cron', hour="14",minute="0")
 async def noon():
     forward_msg = await get_img('雪糕')    
     try:
-        await sv.broadcast('太热啦，恰根雪糕啦', 'noon setu message')
+        await asyncio.sleep(0.8)
+        await sv.broadcast('太热啦，恰根雪糕捏', 'noon setu message')
         await sv.broadcast_forward(msgs = forward_msg, TAG = 'noon setu message')
     except:
         await sv.broadcast_forward('太涩了发不出去捏', TAG = 'noon setu error')
-)
+
 
 @sv.scheduled_job('cron', hour="20",minute="0")
 async def night():
     forward_msg = await get_img('黑丝')    
     try:
+        await asyncio.sleep(0.8)
         await sv.broadcast('黑夜啦,该看黑丝啦', 'night setu message')
         await sv.broadcast_forward(msgs = forward_msg, TAG = 'night setu message')
     except:

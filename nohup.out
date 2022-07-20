@@ -2423,3 +2423,230 @@ Run time of job "fetch_setu_process (trigger: interval[0:10:00], next run at: 20
 [2022-07-20 12:17:31,978 涩图] INFO: Scheduled job fetch_setu_process completed.
 [2022-07-20 12:17:33,847 nonebot] INFO: Self: 2656914596, Message 2139499008 from 2519463315@[群:651925899]: '[CQ:reply,id=-1879130508][CQ:at,qq=2656914596] 真阴间啊'
 >>>>>>> prod
+ujson module not found, using json
+msgpack not installed, MsgPackSerializer unavailable
+[2022-07-20 12:59:50,901 config] WARNING: Not found config of "maimaiDX"
+[2022-07-20 12:59:50,901 config] WARNING: Not found config of "explosion"
+[2022-07-20 12:59:50,901 config] WARNING: Not found config of "translate"
+[2022-07-20 12:59:50,901 config] WARNING: Not found config of "botmanage"
+[2022-07-20 12:59:50,901 config] WARNING: Not found config of "dice"
+[2022-07-20 12:59:50,901 config] WARNING: Not found config of "homo114514"
+[2022-07-20 12:59:50,901 config] INFO: Succeeded to load config of "hourcall"
+[2022-07-20 12:59:50,902 config] WARNING: Not found config of "randomdingzhen"
+[2022-07-20 12:59:50,902 config] INFO: Succeeded to load config of "imagegenerator"
+[2022-07-20 12:59:50,902 config] WARNING: Not found config of "petpet"
+[2022-07-20 12:59:50,902 config] WARNING: Not found config of "moneyexchangerate"
+[2022-07-20 12:59:50,902 config] WARNING: Not found config of "setu"
+[2022-07-20 12:59:50,902 config] WARNING: Not found config of "qrcode"
+[2022-07-20 12:59:50,902 config] INFO: Succeeded to load config of "groupmaster"
+[2022-07-20 12:59:50,902 config] WARNING: Not found config of "crazythursday"
+[2022-07-20 12:59:50,903 config] INFO: Succeeded to load config of "picfinder"
+[2022-07-20 12:59:51,480 nonebot] INFO: Succeeded to import "hoshino.modules.maimaiDX.maimai"
+[2022-07-20 12:59:51,481 nonebot] INFO: Succeeded to import "hoshino.modules.explosion.voice_dict"
+[2022-07-20 12:59:51,482 nonebot] INFO: Succeeded to import "hoshino.modules.explosion.explosion"
+[2022-07-20 12:59:51,869 nonebot] INFO: Succeeded to import "hoshino.modules.translate.translate"
+[2022-07-20 12:59:51,869 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.alert"
+[2022-07-20 12:59:51,873 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.help"
+[2022-07-20 12:59:51,873 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.feedback"
+[2022-07-20 12:59:51,874 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.get_cqcode"
+[2022-07-20 12:59:51,876 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.service_manage"
+[2022-07-20 12:59:51,876 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.help"
+[2022-07-20 12:59:51,876 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.billing"
+[2022-07-20 12:59:51,877 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.group_leave"
+[2022-07-20 12:59:51,877 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.data_cleaner"
+[2022-07-20 12:59:51,877 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.broadcast"
+[2022-07-20 12:59:51,877 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.group_invite"
+[2022-07-20 12:59:51,878 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.ls"
+[2022-07-20 12:59:51,879 nonebot] INFO: Succeeded to import "hoshino.modules.dice.dice"
+[2022-07-20 12:59:51,879 nonebot] INFO: Succeeded to import "hoshino.modules.homo114514.dict"
+[2022-07-20 12:59:51,880 nonebot] INFO: Succeeded to import "hoshino.modules.homo114514.114514"
+[2022-07-20 12:59:51,881 nonebot] INFO: Succeeded to import "hoshino.modules.hourcall.hourcall"
+[2022-07-20 12:59:51,915 nonebot] INFO: Succeeded to import "hoshino.modules.randomdingzhen.RandomDingzhen"
+[2022-07-20 12:59:51,941 nonebot] INFO: Succeeded to import "hoshino.modules.imagegenerator.image_generator"
+[2022-07-20 12:59:52,041 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.models"
+[2022-07-20 12:59:52,041 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.functions"
+[2022-07-20 12:59:52,041 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.data_source"
+[2022-07-20 12:59:52,041 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.download"
+[2022-07-20 12:59:52,042 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.utils"
+[2022-07-20 12:59:52,050 nonebot] INFO: Succeeded to import "hoshino.modules.moneyexchangerate.huilv"
+[2022-07-20 12:59:52,057 nonebot] INFO: Succeeded to import "hoshino.modules.setu.acggov"
+[2022-07-20 12:59:52,057 nonebot] INFO: Succeeded to import "hoshino.modules.setu.lolicon"
+[2022-07-20 12:59:52,057 nonebot] INFO: Succeeded to import "hoshino.modules.setu.base"
+[2022-07-20 12:59:52,057 nonebot] INFO: Succeeded to import "hoshino.modules.setu.config"
+[2022-07-20 12:59:52,058 nonebot] INFO: Succeeded to import "hoshino.modules.setu.dailydose"
+[2022-07-20 12:59:52,071 nonebot] INFO: Succeeded to import "hoshino.modules.qrcode.main"
+[2022-07-20 12:59:52,072 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.join_approve"
+[2022-07-20 12:59:52,073 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.sleeping_set"
+[2022-07-20 12:59:52,073 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.group_notice"
+[2022-07-20 12:59:52,074 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_abuse"
+[2022-07-20 12:59:52,074 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.random_repeater"
+[2022-07-20 12:59:52,075 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.chat"
+[2022-07-20 12:59:52,076 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_asoul"
+[2022-07-20 12:59:52,076 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.antiqks"
+[2022-07-20 12:59:52,077 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_lex"
+[2022-07-20 12:59:52,077 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_holo"
+[2022-07-20 12:59:52,078 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.loli_is_justice"
+[2022-07-20 12:59:52,078 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_msg_recall"
+[2022-07-20 12:59:52,079 nonebot] INFO: Succeeded to import "hoshino.modules.crazythursday.fuckingCrazyThursday"
+[2022-07-20 12:59:52,088 nonebot] INFO: Succeeded to import "hoshino.modules.picfinder.image"
+[2022-07-20 12:59:52,088 nonebot] INFO: Running on 127.0.0.1:8188
+ * Serving Quart app ''
+ * Environment: production
+ * Please use an ASGI server (e.g. Hypercorn) directly in production
+ * Debug mode: False
+ * Running on http://127.0.0.1:8188 (CTRL + C to quit)
+[2022-07-20 12:59:52,091 nonebot] INFO: Scheduler started
+[2022-07-20 12:59:52,730] Running on http://127.0.0.1:8188 (CTRL + C to quit)
+[2022-07-20 12:59:53,385] 127.0.0.1:57354 GET /ws 1.1 101 - 1295
+[2022-07-20 13:00:00,002 hourcall] INFO: Scheduled job hour_call start.
+[2022-07-20 13:00:00,002 每日一涩] INFO: Scheduled job noon start.
+[2022-07-20 13:00:00,004 hourcall] INFO: Scheduled job hour_call completed.
+[2022-07-20 13:00:01,272 hoshino] INFO: [INFO]lolicon downloading pixiv image:https://i.pximg.net/img-master/img/2022/06/01/16/26/17/98754631_p0_master1200.jpg
+[2022-07-20 13:00:02,884 每日一涩] INFO: 群315372702 投递noon setu message成功 共1条消息
+[2022-07-20 13:00:03,725 每日一涩] INFO: 群837114430 投递noon setu message成功 共1条消息
+[2022-07-20 13:00:04,592 每日一涩] INFO: 群434364039 投递noon setu message成功 共1条消息
+[2022-07-20 13:00:11,965 每日一涩] ERROR: 群315372702 投递noon setu message失败：<class 'aiocqhttp.exceptions.ActionFailed'>
+[2022-07-20 13:00:11,965 每日一涩] ERROR: <ActionFailed data=None, echo={'seq': 7}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/service.py", line 383, in broadcast_forward
+    await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/__init__.py", line 238, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 178, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 153, in call_action
+    return _handle_api_result(await
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 38, in _handle_api_result
+    raise ActionFailed(result=result)
+aiocqhttp.exceptions.ActionFailed: <ActionFailed data=None, echo={'seq': 7}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+[2022-07-20 13:00:13,794 每日一涩] INFO: 群837114430 投递noon setu message成功 
+[2022-07-20 13:00:20,351 每日一涩] ERROR: 群434364039 投递noon setu message失败：<class 'aiocqhttp.exceptions.ActionFailed'>
+[2022-07-20 13:00:20,351 每日一涩] ERROR: <ActionFailed data=None, echo={'seq': 9}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+Traceback (most recent call last):
+  File "/usr/newbot/FlyingMianBot/hoshino/service.py", line 383, in broadcast_forward
+    await bot.send_group_forward_msg(group_id=str(gid), messages=msgs)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/__init__.py", line 238, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 178, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 153, in call_action
+    return _handle_api_result(await
+  File "/usr/newbot/flyingenv/lib64/python3.8/site-packages/aiocqhttp/api_impl.py", line 38, in _handle_api_result
+    raise ActionFailed(result=result)
+aiocqhttp.exceptions.ActionFailed: <ActionFailed data=None, echo={'seq': 9}, msg='SEND_MSG_API_ERROR', retcode=100, status='failed', wording='请参考 go-cqhttp 端输出'>
+[2022-07-20 13:00:20,351 每日一涩] INFO: Scheduled job noon completed.
+[2022-07-20 13:00:26,075 nonebot] INFO: Self: 2656914596, Message 117059146 from 1340615572@[群:434364039]: '帮助每日一涩'
+[2022-07-20 13:00:26,076 _help_] INFO: Message 117059146 triggered send_help.
+[2022-07-20 13:00:26,377 nonebot] INFO: Message 117059146 is ignored: Handled by Hoshino
+[2022-07-20 13:00:47,207 nonebot] INFO: Self: 2656914596, Message -386642074 from 1340615572@[群:434364039]: '帮助疯狂星期四'
+[2022-07-20 13:00:47,208 _help_] INFO: Message -386642074 triggered send_help.
+[2022-07-20 13:00:47,620 nonebot] INFO: Message -386642074 is ignored: Handled by Hoshino
+[2022-07-20 13:00:57,734 nonebot] INFO: Self: 2656914596, Message 26733139 from 534193319@[群:434364039]: '疯狂星期四'
+[2022-07-20 13:00:57,734 疯狂星期四] INFO: Message 26733139 triggered random_post.
+[2022-07-20 13:00:58,007 nonebot] INFO: Message 26733139 is ignored: Handled by Hoshino
+[2022-07-20 13:01:05,815 nonebot] INFO: Self: 2656914596, Message -275149953 from 1340615572@[群:434364039]: '疯狂星期四'
+[2022-07-20 13:01:05,816 疯狂星期四] INFO: Message -275149953 triggered random_post.
+[2022-07-20 13:01:06,128 nonebot] INFO: Message -275149953 is ignored: Handled by Hoshino
+[2022-07-20 13:01:40,323 nonebot] INFO: Self: 2656914596, Message 136423032 from 1340615572@[群:434364039]: '帮助爆裂魔法'
+[2022-07-20 13:01:40,323 爆裂魔法] INFO: Message 136423032 triggered bangzhu_explosion.
+[2022-07-20 13:01:40,748 nonebot] INFO: Message 136423032 is ignored: Handled by Hoshino
+[2022-07-20 13:01:55,835 nonebot] INFO: Self: 2656914596, Message 769097097 from 1340615572@[群:434364039]: '来一发'
+[2022-07-20 13:01:55,835 爆裂魔法] INFO: Message 769097097 triggered send_explosion.
+[2022-07-20 13:01:58,380 nonebot] INFO: Message 769097097 is ignored: Handled by Hoshino
+[2022-07-20 13:02:40,846 nonebot] INFO: Self: 2656914596, Message 1572702470 from 1340615572@[群:434364039]: '帮助涩图'
+[2022-07-20 13:02:40,846 _help_] INFO: Message 1572702470 triggered send_help.
+[2022-07-20 13:02:41,119 nonebot] INFO: Message 1572702470 is ignored: Handled by Hoshino
+[2022-07-20 13:03:03,809 nonebot] INFO: Self: 2656914596, Message 252405410 from 1239461504@[群:651925899]: '[CQ:image,file=f52f7dcbe06ad4b49ba9e814a0ebe8bd.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2535446089-F52F7DCBE06AD4B49BA9E814A0EBE8BD/0?term=3]'
+[2022-07-20 13:03:06,894 nonebot] INFO: Self: 2656914596, Message -1280055254 from 1340615572@[群:434364039]: '来两张田田色图'
+[2022-07-20 13:03:06,894 涩图] INFO: Message -1280055254 triggered send_search_setu.
+[2022-07-20 13:03:11,507 nonebot] INFO: Message -1280055254 is ignored: Handled by Hoshino
+/usr/newbot/flyingenv/lib64/python3.8/site-packages/nonebot/plugin.py:58: UserWarning: Plugin hoshino.modules.botmanage.help already exists
+  warnings.warn(f"Plugin {module_path} already exists")
+/usr/newbot/flyingenv/lib64/python3.8/site-packages/apscheduler/util.py:436: PytzUsageWarning: The localize method is no longer necessary, as this time zone supports the fold attribute (PEP 495). For more details on migrating to a PEP 495-compliant implementation, see https://pytz-deprecation-shim.readthedocs.io/en/latest/migration.html
+  return tzinfo.localize(dt)
+ujson module not found, using json
+msgpack not installed, MsgPackSerializer unavailable
+[2022-07-20 13:24:50,525 config] INFO: Succeeded to load config of "groupmaster"
+[2022-07-20 13:24:50,525 config] WARNING: Not found config of "translate"
+[2022-07-20 13:24:50,525 config] WARNING: Not found config of "moneyexchangerate"
+[2022-07-20 13:24:50,525 config] WARNING: Not found config of "dice"
+[2022-07-20 13:24:50,525 config] INFO: Succeeded to load config of "imagegenerator"
+[2022-07-20 13:24:50,526 config] INFO: Succeeded to load config of "picfinder"
+[2022-07-20 13:24:50,526 config] WARNING: Not found config of "randomdingzhen"
+[2022-07-20 13:24:50,526 config] WARNING: Not found config of "homo114514"
+[2022-07-20 13:24:50,526 config] WARNING: Not found config of "maimaiDX"
+[2022-07-20 13:24:50,526 config] INFO: Succeeded to load config of "hourcall"
+[2022-07-20 13:24:50,526 config] WARNING: Not found config of "setu"
+[2022-07-20 13:24:50,526 config] WARNING: Not found config of "botmanage"
+[2022-07-20 13:24:50,526 config] WARNING: Not found config of "explosion"
+[2022-07-20 13:24:50,527 config] WARNING: Not found config of "qrcode"
+[2022-07-20 13:24:50,527 config] WARNING: Not found config of "crazythursday"
+[2022-07-20 13:24:50,527 config] WARNING: Not found config of "petpet"
+[2022-07-20 13:24:50,914 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.join_approve"
+[2022-07-20 13:24:50,933 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.sleeping_set"
+[2022-07-20 13:24:50,934 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.group_notice"
+[2022-07-20 13:24:50,934 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_abuse"
+[2022-07-20 13:24:50,935 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.random_repeater"
+[2022-07-20 13:24:50,940 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.chat"
+[2022-07-20 13:24:50,941 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_asoul"
+[2022-07-20 13:24:51,010 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.antiqks"
+[2022-07-20 13:24:51,055 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_lex"
+[2022-07-20 13:24:51,056 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_holo"
+[2022-07-20 13:24:51,056 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.loli_is_justice"
+[2022-07-20 13:24:51,057 nonebot] INFO: Succeeded to import "hoshino.modules.groupmaster.anti_msg_recall"
+[2022-07-20 13:24:51,410 nonebot] INFO: Succeeded to import "hoshino.modules.translate.translate"
+[2022-07-20 13:24:51,422 nonebot] INFO: Succeeded to import "hoshino.modules.moneyexchangerate.huilv"
+[2022-07-20 13:24:51,424 nonebot] INFO: Succeeded to import "hoshino.modules.dice.dice"
+[2022-07-20 13:24:51,481 nonebot] INFO: Succeeded to import "hoshino.modules.imagegenerator.image_generator"
+[2022-07-20 13:24:51,491 nonebot] INFO: Succeeded to import "hoshino.modules.picfinder.image"
+[2022-07-20 13:24:51,491 nonebot] INFO: Succeeded to import "hoshino.modules.randomdingzhen.RandomDingzhen"
+[2022-07-20 13:24:51,492 nonebot] INFO: Succeeded to import "hoshino.modules.homo114514.dict"
+[2022-07-20 13:24:51,492 nonebot] INFO: Succeeded to import "hoshino.modules.homo114514.114514"
+[2022-07-20 13:24:51,508 nonebot] INFO: Succeeded to import "hoshino.modules.maimaiDX.maimai"
+[2022-07-20 13:24:51,509 nonebot] INFO: Succeeded to import "hoshino.modules.hourcall.hourcall"
+[2022-07-20 13:24:51,514 nonebot] INFO: Succeeded to import "hoshino.modules.setu.acggov"
+[2022-07-20 13:24:51,515 nonebot] INFO: Succeeded to import "hoshino.modules.setu.lolicon"
+[2022-07-20 13:24:51,515 nonebot] INFO: Succeeded to import "hoshino.modules.setu.base"
+[2022-07-20 13:24:51,515 nonebot] INFO: Succeeded to import "hoshino.modules.setu.config"
+[2022-07-20 13:24:51,516 nonebot] INFO: Succeeded to import "hoshino.modules.setu.dailydose"
+[2022-07-20 13:24:51,516 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.alert"
+[2022-07-20 13:24:51,517 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.help"
+[2022-07-20 13:24:51,517 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.feedback"
+[2022-07-20 13:24:51,517 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.get_cqcode"
+[2022-07-20 13:24:51,520 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.service_manage"
+[2022-07-20 13:24:51,520 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.help"
+[2022-07-20 13:24:51,521 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.billing"
+[2022-07-20 13:24:51,521 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.group_leave"
+[2022-07-20 13:24:51,521 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.data_cleaner"
+[2022-07-20 13:24:51,522 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.broadcast"
+[2022-07-20 13:24:51,522 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.group_invite"
+[2022-07-20 13:24:51,522 nonebot] INFO: Succeeded to import "hoshino.modules.botmanage.ls"
+[2022-07-20 13:24:51,523 nonebot] INFO: Succeeded to import "hoshino.modules.explosion.voice_dict"
+[2022-07-20 13:24:51,581 nonebot] INFO: Succeeded to import "hoshino.modules.explosion.explosion"
+[2022-07-20 13:24:51,594 nonebot] INFO: Succeeded to import "hoshino.modules.qrcode.main"
+[2022-07-20 13:24:51,595 nonebot] INFO: Succeeded to import "hoshino.modules.crazythursday.fuckingCrazyThursday"
+[2022-07-20 13:24:51,636 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.models"
+[2022-07-20 13:24:51,636 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.functions"
+[2022-07-20 13:24:51,636 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.data_source"
+[2022-07-20 13:24:51,636 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.download"
+[2022-07-20 13:24:51,637 nonebot] INFO: Succeeded to import "hoshino.modules.petpet.utils"
+[2022-07-20 13:24:51,637 nonebot] INFO: Running on 127.0.0.1:8188
+ * Serving Quart app ''
+ * Environment: production
+ * Please use an ASGI server (e.g. Hypercorn) directly in production
+ * Debug mode: False
+ * Running on http://127.0.0.1:8188 (CTRL + C to quit)
+[2022-07-20 13:24:51,640 nonebot] INFO: Scheduler started
+[2022-07-20 13:24:52,724] Running on http://127.0.0.1:8188 (CTRL + C to quit)
+[2022-07-20 13:24:52,984] 127.0.0.1:59492 GET /ws 1.1 101 - 1219
+[2022-07-20 13:25:25,220 nonebot] INFO: Self: 2656914596, Message 140944059 from 1239461504@[群:651925899]: '我有病午饭吃火鸡面'
+[2022-07-20 13:25:28,261 nonebot] INFO: Self: 2656914596, Message -1854934271 from 1239461504@[群:651925899]: '[CQ:image,file=f52f7dcbe06ad4b49ba9e814a0ebe8bd.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/1239461504/651925899-2599406618-F52F7DCBE06AD4B49BA9E814A0EBE8BD/0?term=3]'
+[2022-07-20 13:25:53,882 nonebot] INFO: Self: 2656914596, Message 1822190533 from 534193319@[群:837114430]: '日元汇率'
+[2022-07-20 13:25:53,883 汇率数据] INFO: Message 1822190533 triggered huilv_simple.
+[2022-07-20 13:25:54,630 nonebot] INFO: Message 1822190533 is ignored: Handled by Hoshino
+[2022-07-20 13:26:13,064 nonebot] INFO: Self: 2656914596, Message -2104358167 from 534193319@[群:837114430]: '英镑汇率'
+[2022-07-20 13:26:13,065 汇率数据] INFO: Message -2104358167 triggered huilv_simple.
+[2022-07-20 13:26:13,367 nonebot] INFO: Message -2104358167 is ignored: Handled by Hoshino
+[2022-07-20 13:26:20,886 nonebot] INFO: Self: 2656914596, Message -429341801 from 534193319@[群:651925899]: '日元汇率'
+[2022-07-20 13:26:20,886 汇率数据] INFO: Message -429341801 triggered huilv_simple.
+[2022-07-20 13:26:21,541 nonebot] INFO: Message -429341801 is ignored: Handled by Hoshino
