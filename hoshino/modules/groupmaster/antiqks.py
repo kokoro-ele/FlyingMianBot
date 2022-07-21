@@ -17,7 +17,7 @@ async def qks_rex(bot, ev):
     match = ev.match
     msg = f'骑空士爪巴远点\n{qksimg}'
     res = 'http://'+match.group(0)
-    async with aiohttp.TCPConnector(verify_ssl=False) as connector:
+    async with aiohttp.TCPConnector(verify_) as connector:
         async with aiohttp.request(
             'GET',
             url=res,

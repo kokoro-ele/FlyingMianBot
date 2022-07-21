@@ -1,3 +1,4 @@
+from email import message
 import json
 import os
 import traceback
@@ -170,7 +171,7 @@ async def send_setu(bot, ev):
 		msg = '需要超级用户权限\n发送"help 涩图"获取操作指令'
 	elif len(args) == 0:
 		msg = '无效参数\n发送"help 涩图"获取操作指令'
-	elif args[0] == '设置' and len(args) >= 3:  # setu set module on [group]
+	elif args[0] == 'set' and len(args) >= 3:  # setu set module on [group]
 		if len(args) >= 4 and args[3].isdigit():
 			gid = int(args[3])
 		if args[1] == 'lolicon':
@@ -187,9 +188,9 @@ async def send_setu(bot, ev):
 			key = 'night'
 		else:
 			key = None
-		if args[2] == '开' or args[2] == '启用':
+		if args[2] == 'true' or args[2] == 'on':
 			value = True
-		elif args[2] == '关' or args[2] == '禁用':
+		elif args[2] == 'false' or args[2] == 'off':
 			value = False
 		elif args[2].isdigit():
 			value = int(args[2])
@@ -203,7 +204,7 @@ async def send_setu(bot, ev):
 			msg += f'群/{gid} : 设置项/{key} = 值/{value}'
 		else:
 			msg = '无效参数'
-	elif args[0] == '状态':
+	elif args[0] == 'status':
 		if len(args) >= 2 and args[1].isdigit():
 			gid = int(args[1])
 		withdraw_status = "不撤回" if get_group_config(gid, "withdraw") == 0 else f'{get_group_config(gid, "withdraw")}秒'
@@ -264,6 +265,7 @@ async def send_setu(bot, ev):
 
 
 @sv.on_rex(r'^[色涩瑟][图圖]$|^[来來发發给給]((?P<num>\d+)|(?:.*))[张張个個幅点點份丶](?P<keyword>.*?)[色涩瑟][图圖]$')
+@sv.on_fullmatch("不够涩")
 async def send_search_setu(bot, ev):
 	uid = ev['user_id']
 	gid = ev['group_id']

@@ -68,7 +68,7 @@ async def query_setu(r18=0, keyword=None):
 		'num': 10,
 	}
 	if keyword:
-		params['keyword'] = keyword
+		params['tag'] = keyword
 	thumb = get_config('lolicon', 'use_thumb')
 	if thumb:
 		params['size'] = 'regular'
@@ -104,6 +104,7 @@ async def download_image(url: str):
 	hoshino.logger.info(f'[INFO]lolicon downloading image:{url}')
 	try:
 		async with aiohttp.ClientSession() as session:
+			print(url)
 			async with session.get(url, proxy=get_config('lolicon', 'local_proxy')) as resp:
 				data = await resp.read()
 				# 转jpg

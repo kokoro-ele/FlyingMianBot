@@ -8,6 +8,7 @@ from typing import Tuple
 from PIL import Image, ImageDraw
 
 from hoshino import R
+import hoshino
 from .acggov import acggov_fetch_process, acggov_get_ranking, acggov_get_ranking_setu, acggov_get_setu, acggov_init, \
 	acggov_search_setu, get_setu_native
 from .config import get_config, get_group_config
@@ -131,12 +132,16 @@ async def get_ranking(group_id, page: int = 0):
 async def get_ranking_setu(group_id, number: int) -> Tuple[int, str]:
 	if not get_group_config(group_id, 'acggov'):
 		return None
+	hoshino.logger.info('进入acggov_get_ranking_setu')
 	image = await acggov_get_ranking_setu(number)
 	if not image:
+		hoshino.logger.info('进入1')
 		return '获取失败'
 	elif image['id'] != 0:
+		hoshino.logger.info('进入2')
 		return format_setu_msg(image)
 	else:
+		hoshino.logger.info('进入2')
 		return image['title']
 
 
