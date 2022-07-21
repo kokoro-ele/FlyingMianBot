@@ -250,7 +250,7 @@ async def download_pixiv_image(url: str, id):
 		'referer': f'https://www.pixiv.net/member_illust.php?mode=medium&illust_id={id}'
 	}
 	try:
-		async with aiohttp.ClientSession(headers=acggov_headers) as session:
+		async with aiohttp.ClientSession(headers=headers) as session:
 			async with session.get(url, proxy=get_config('acggov', 'pixiv_proxy'), ) as resp:
 				data = await resp.read()
 				# 转jpg

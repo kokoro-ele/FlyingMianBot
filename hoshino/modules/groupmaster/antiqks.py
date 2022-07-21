@@ -1,4 +1,5 @@
 import aiohttp
+from sqlalchemy import false
 from hoshino import R, Service, util
 
 sv = Service('antiqks', help_='识破骑空士的阴谋')
@@ -17,7 +18,7 @@ async def qks_rex(bot, ev):
     match = ev.match
     msg = f'骑空士爪巴远点\n{qksimg}'
     res = 'http://'+match.group(0)
-    async with aiohttp.TCPConnector(verify_) as connector:
+    async with aiohttp.TCPConnector(verify_ssl=false) as connector:
         async with aiohttp.request(
             'GET',
             url=res,
