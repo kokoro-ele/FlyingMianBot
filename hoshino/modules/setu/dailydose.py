@@ -59,12 +59,22 @@ async def noon():
         await sv.broadcast_forward('太涩了发不出去捏', TAG = 'noon setu error')
 
 
-@sv.scheduled_job('cron', hour="20",minute="0")
+@sv.scheduled_job('cron', hour="19",minute="0")
 async def night():
     forward_msg = await get_img('黑丝')    
     try:
         await asyncio.sleep(0.8)
         await sv.broadcast('黑夜啦,该看黑丝啦', 'night setu message')
+        await sv.broadcast_forward(msgs = forward_msg, TAG = 'night setu message')
+    except:
+        await sv.broadcast_forward('太涩了发不出去捏', TAG = 'night setu error')
+
+@sv.scheduled_job('cron', hour="22",minute="0")
+async def night():
+    forward_msg = await get_img('巧克力')    
+    try:
+        await asyncio.sleep(0.8)
+        await sv.broadcast('恰点巧克力睡觉力捏', 'night setu message')
         await sv.broadcast_forward(msgs = forward_msg, TAG = 'night setu message')
     except:
         await sv.broadcast_forward('太涩了发不出去捏', TAG = 'night setu error')
