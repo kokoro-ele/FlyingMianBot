@@ -5,7 +5,7 @@ import random
 from nonebot import on_command
 from datetime import datetime
 import pytz
-
+from pathlib import Path
 import hoshino
 from hoshino import R, Service, priv, util
 from hoshino.typing import CQEvent
@@ -26,6 +26,7 @@ sv = Service(
     help_ = sv_help #帮助文本
     )
 
+H = Path.cwd().joinpath(r'res')
 @sv.on_fullmatch(["帮助语言库"])
 async def bangzhu_botchat(bot, ev):
     await bot.send(ev, sv_help, at_sender=True)
@@ -55,13 +56,13 @@ async def chat_mua(bot, ev):
 
 @sv.on_fullmatch(('早安', '早安哦', '早上好', '早上好啊', '早上好呀', '早', 'good morning'))
 async def goodmorning(bot, ev):
-    path = R.img('DIY/','刻晴早安.mp3').path
+    path = H.joinpath(r'DIY','刻晴早安.mp3').path
     now_hour=datetime.now(tz).hour
     if 0<=now_hour<6:
         await bot.send(ev, f'好早，现在才{now_hour}点呢', at_sender=True)
     elif 6<=now_hour<10:
         await bot.send(ev, '早上好！今天打算做什么呢？', at_sender=True)
-        await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+        await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     elif 21<=now_hour<24:
         await bot.send(ev, '别闹，准备睡觉啦！', at_sender=True)
     else:
@@ -69,11 +70,11 @@ async def goodmorning(bot, ev):
         
 @sv.on_fullmatch(('午安', '午安哦', '中午好', '中午好啊', '中午好呀', '下午好', 'good noon'))
 async def goodnoon(bot, ev):
-    path = R.img('DIY/','刻晴午安.mp3').path
+    path = H.joinpath(r'DIY','刻晴午安.mp3')
     now_hour=datetime.now(tz).hour
     if 11<=now_hour<13:
         await bot.send(ev, f'中午好捏', at_sender=True)
-        await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+        await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     elif 13<=now_hour<16:
         await bot.send(ev, '下午好捏', at_sender=True)
     elif 17<=now_hour<18:
@@ -82,10 +83,10 @@ async def goodnoon(bot, ev):
 @sv.on_fullmatch(('晚上好', '晚上好啊', '晚上好呀', 'good evening'))
 async def goodevening(bot, ev):
     now_hour=datetime.now(tz).hour
-    path = R.img('DIY/','刻晴晚上好.mp3').path
+    path = H.joinpath(r'DIY','刻晴晚上好.mp3')
     if 18<=now_hour<24:
         await bot.send(ev, f'晚上好！今晚想做什么呢？', at_sender=True)
-        await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+        await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     elif 0<=now_hour<6:
         await bot.send(ev, f'{now_hour}点啦，还不睡吗？', at_sender=True)
     elif 6<=now_hour<=9:
@@ -96,10 +97,10 @@ async def goodevening(bot, ev):
 @sv.on_fullmatch(('晚安', '晚安哦', '晚安啦', 'good night'))
 async def goodnight(bot, ev):
     now_hour=datetime.now(tz).hour
-    path = R.img('DIY/','甘雨晚安.mp3').path
+    path = H.joinpath(r'DIY','甘雨晚安.mp3')
     if now_hour<=3 or now_hour>=21:
         await bot.send(ev, '晚安~', at_sender=True)
-        await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+        await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     elif 19<=now_hour<21:
         await bot.send(ev, f'现在才{now_hour}点，这么早就睡了吗？', at_sender=True)
     else:
@@ -115,108 +116,108 @@ async def eatme(bot, ev):
 
 @sv.on_keyword(('诶嘿','哎嘿','欸嘿'))
 async def eihe(bot, ev):
-    path = R.img('DIY/','诶嘿.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'DIY','诶嘿.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('进不去'))
 async def nointo(bot, ev):
-    path = R.img('DIY/','进不去.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'DIY','进不去.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('你是谁'))
 async def whoareu(bot, ev):
-    path = R.img('DIY/','嘿嘿你猜.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'DIY','嘿嘿你猜.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('前面的区域'))
 async def qmdqy(bot, ev):
-    path = R.img('ZOE/','前面的区域.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'img\ZOE','前面的区域.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('祝福'))
 async def zf(bot, ev):
-    path = R.img('ZOE/','来个祝福.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','来个祝福.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('泪目'))
 async def leimu(bot, ev):
-    path = R.img('ZOE/','泪目.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','泪目.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('中二派蒙'))
 async def zhonger(bot, ev):
-    path = R.img('ZOE/','中二派蒙.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','中二派蒙.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('抱抱'))
 async def baobao(bot, ev):
-    path = R.img('ZOE/','真是个小可爱.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','真是个小可爱.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('无语'))
 async def nosay(bot, ev):
-    path = R.img('ZOE/','无语.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','无语.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('伙伴'))
 async def friend(bot, ev):
-    path = R.img('ZOE/','伙伴.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','伙伴.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('好色哦','好色噢','好涩哦','hso'))
 async def sexy(bot, ev):
-    path = R.img('ZOE/','好色哦.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','好色哦.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('生气'))
 async def angry(bot, ev):
-    path = R.img('ZOE/','好生气.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','好生气.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('好气哦','好气噢'))
 async def nervous(bot, ev):
-    path = R.img('ZOE/','好气哦.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','好气哦.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('憨批'))
 async def shabi(bot, ev):
-    path = R.img('ZOE/','憨批.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','憨批.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('大佬nb','大佬牛逼'))
 async def dalao(bot, ev):
-    path = R.img('ZOE/','大佬nb.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','大佬nb.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('不是吧'))
 async def asir(bot, ev):
-    path = R.img('ZOE/','不是吧阿sir.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','不是吧阿sir.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('变态'))
 async def biantai(bot, ev):
-    path = R.img('ZOE/','好变态.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','好变态.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('给爷爬'))
 async def geiyepa(bot, ev):
-    path = R.img('ZOE/','给爷爬.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','给爷爬.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('信我'))
 async def believeme(bot, ev):
-    path = R.img('ZOE/','我信你个鬼.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','我信你个鬼.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('这个仇','记住'))
 async def thechou(bot, ev):
-    path = R.img('ZOE/','这个仇.mp3').path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','这个仇.mp3')
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('绿茶'))
 async def greentea(bot, ev):
-    path = R.img('ZOE/','绿茶派.mp3').path.path
-    await bot.send(ev, f'[CQ:record,file=file:///{os.path.abspath(path)}]')
+    path = H.joinpath(r'ZOE','绿茶派.mp3').path
+    await bot.send(ev, f'[CQ:record,file=file:///{path}]')
 
 #====群聊======#
 @sv.on_fullmatch(('我满了', '我出了', '我成功了', '我出货了'))
@@ -461,49 +462,40 @@ dao_folder = R.img('keyword/dao/').path
 async def chat_dao(bot, ev):
     if random.random() < 0.30:
         filelist = os.listdir(dao_folder)
-        path = None
-        while not path or not os.path.isfile(path):
-            filename = random.choice(filelist)
-            path = os.path.join(dao_folder, filename)
-            pic = R.img('keyword/dao/', filename).cqcode
-            await bot.send(ev, pic, at_sender=False)
+        filename = random.choice(filelist)
+        path = os.path.join(dao_folder, filename)
+        pic = R.img('keyword/dao/', filename).cqcode
+        await bot.send(ev, pic, at_sender=False)
 
 az_folder = R.img('keyword/az/').path
 @sv.on_keyword(('啊这'))
 async def chat_az(bot, ev):
     if random.random() < 0.55:
         filelist = os.listdir(az_folder)
-        path = None
-        while not path or not os.path.isfile(path):
-            filename = random.choice(filelist)
-            path = os.path.join(az_folder, filename)
-            pic = R.img('keyword/az/', filename).cqcode
-            await bot.send(ev, pic, at_sender=False)
+        filename = random.choice(filelist)
+        path = os.path.join(az_folder, filename)
+        pic = R.img('keyword/az/', filename).cqcode
+        await bot.send(ev, pic, at_sender=False)
 
 jietou_folder = R.img('keyword/jt/').path
 @sv.on_keyword(('接头'))
 async def chat_az(bot, ev):
     if random.random() < 0.55:
         filelist = os.listdir(jietou_folder)
-        path = None
-        while not path or not os.path.isfile(path):
-            filename = random.choice(filelist)
-            path = os.path.join(jietou_folder, filename)
-            pic = R.img('keyword/jt/', filename).cqcode
-            await bot.send(ev, pic, at_sender=False)
+        filename = random.choice(filelist)
+        path = os.path.join(jietou_folder, filename)
+        pic = R.img('keyword/jt/', filename).cqcode
+        await bot.send(ev, pic, at_sender=False)
 
 
 niant_folder = R.img('keyword/niant/').path
 @sv.on_keyword(('炼铜'))
 async def chat_niant(bot, ev):
-    if random.random() < 0.50:
-        filelist = os.listdir(jietou_folder)
-        path = None
-        while not path or not os.path.isfile(path):
-            filename = random.choice(filelist)
-            path = os.path.join(niant_folder, filename)
-            pic = R.img('keyword/niant/', filename).cqcode
-            await bot.send(ev, pic, at_sender=False)
+    if random.random() < 0.80:
+        filelist = os.listdir(niant_folder)
+        filename = random.choice(filelist)
+        pic = R.img('keyword/niant/', filename).cqcode
+        await bot.send(ev, pic, at_sender=False)
     else:
         await bot.send(ev, f'朕怎么富国强兵？')
 

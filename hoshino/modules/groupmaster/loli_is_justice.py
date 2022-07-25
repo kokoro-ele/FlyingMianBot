@@ -4,7 +4,7 @@ from hoshino.typing import CQEvent, CQHttpError, MessageSegment as ms
 
 sv = Service('loli-is-justice', enable_on_default=False, visible=False)
 
-@sv.on_keyword('炼铜', '恋童')
+@sv.on_keyword('铜', '恋童')
 async def _(bot, ev: CQEvent):
     priv.set_block_user(ev.user_id, timedelta(hours=1))
     await util.silence(ev, 3600, skip_su=False)
