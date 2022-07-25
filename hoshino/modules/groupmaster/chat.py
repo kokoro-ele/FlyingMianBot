@@ -26,7 +26,7 @@ sv = Service(
     help_ = sv_help #帮助文本
     )
 
-H = Path.cwd().joinpath(r'res')
+H = Path.cwd().joinpath(r'res',r'img')
 @sv.on_fullmatch(["帮助语言库"])
 async def bangzhu_botchat(bot, ev):
     await bot.send(ev, sv_help, at_sender=True)
@@ -131,92 +131,92 @@ async def whoareu(bot, ev):
     
 @sv.on_keyword(('前面的区域'))
 async def qmdqy(bot, ev):
-    path = H.joinpath(r'img\ZOE','前面的区域.mp3')
+    path = H.joinpath(r'Zoe','前面的区域.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('祝福'))
 async def zf(bot, ev):
-    path = H.joinpath(r'ZOE','来个祝福.mp3')
+    path = H.joinpath(r'Zoe','来个祝福.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('泪目'))
 async def leimu(bot, ev):
-    path = H.joinpath(r'ZOE','泪目.mp3')
+    path = H.joinpath(r'Zoe','泪目.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('中二派蒙'))
 async def zhonger(bot, ev):
-    path = H.joinpath(r'ZOE','中二派蒙.mp3')
+    path = H.joinpath(r'Zoe','中二派蒙.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('抱抱'))
 async def baobao(bot, ev):
-    path = H.joinpath(r'ZOE','真是个小可爱.mp3')
+    path = H.joinpath(r'Zoe','真是个小可爱.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('无语'))
 async def nosay(bot, ev):
-    path = H.joinpath(r'ZOE','无语.mp3')
+    path = H.joinpath(r'Zoe','无语.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('伙伴'))
 async def friend(bot, ev):
-    path = H.joinpath(r'ZOE','伙伴.mp3')
+    path = H.joinpath(r'Zoe','伙伴.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('好色哦','好色噢','好涩哦','hso'))
 async def sexy(bot, ev):
-    path = H.joinpath(r'ZOE','好色哦.mp3')
+    path = H.joinpath(r'Zoe','好色哦.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('生气'))
 async def angry(bot, ev):
-    path = H.joinpath(r'ZOE','好生气.mp3')
+    path = H.joinpath(r'Zoe','好生气.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('好气哦','好气噢'))
 async def nervous(bot, ev):
-    path = H.joinpath(r'ZOE','好气哦.mp3')
+    path = H.joinpath(r'Zoe','好气哦.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('憨批'))
 async def shabi(bot, ev):
-    path = H.joinpath(r'ZOE','憨批.mp3')
+    path = H.joinpath(r'Zoe','憨批.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('大佬nb','大佬牛逼'))
 async def dalao(bot, ev):
-    path = H.joinpath(r'ZOE','大佬nb.mp3')
+    path = H.joinpath(r'Zoe','大佬nb.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('不是吧'))
 async def asir(bot, ev):
-    path = H.joinpath(r'ZOE','不是吧阿sir.mp3')
+    path = H.joinpath(r'Zoe','不是吧阿sir.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('变态'))
 async def biantai(bot, ev):
-    path = H.joinpath(r'ZOE','好变态.mp3')
+    path = H.joinpath(r'Zoe','好变态.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('给爷爬'))
 async def geiyepa(bot, ev):
-    path = H.joinpath(r'ZOE','给爷爬.mp3')
+    path = H.joinpath(r'Zoe','给爷爬.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('信我'))
 async def believeme(bot, ev):
-    path = H.joinpath(r'ZOE','我信你个鬼.mp3')
+    path = H.joinpath(r'Zoe','我信你个鬼.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('这个仇','记住'))
 async def thechou(bot, ev):
-    path = H.joinpath(r'ZOE','这个仇.mp3')
+    path = H.joinpath(r'Zoe','这个仇.mp3')
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
     
 @sv.on_keyword(('绿茶'))
 async def greentea(bot, ev):
-    path = H.joinpath(r'ZOE','绿茶派.mp3').path
+    path = H.joinpath(r'Zoe','绿茶派.mp3').path
     await bot.send(ev, f'[CQ:record,file=file:///{path}]')
 
 #====群聊======#
