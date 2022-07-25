@@ -38,7 +38,7 @@ async def get_img(keyword):
         })
     return forward_msg
 
-@sv.scheduled_job('cron', hour="8",minute="00")
+@sv.scheduled_job('cron', hour="7",minute="00")
 async def day():
     forward_msg = await get_img('白丝')
     try:
@@ -46,7 +46,7 @@ async def day():
         await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
         await sv.broadcast_forward(forward_msg, TAG = 'day')
     except:   
-        await sv.broadcast('白天啦,该看白丝啦', 'day setu message')
+        await sv.broadcast('太涩了发不出去捏', 'day setu message')
         
 @sv.scheduled_job('cron', hour="14",minute="0")
 async def noon():

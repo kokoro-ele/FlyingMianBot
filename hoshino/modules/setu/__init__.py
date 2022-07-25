@@ -19,7 +19,7 @@ sv = hoshino.Service('涩图', help_=HELP_MSG)
 config_default = {
 	"base": {
 		"daily_max": 20,  # 每日上限次数
-		"freq_limit": 300,  # 频率限制
+		"freq_limit": 10,  # 频率限制
 		"whitelistmode": False,  # 白名单模式开关
 		"blacklistmode": False,  # 黑名单模式开关
 		"ban_if_group_num_over": 3000,  # 字面意思
@@ -264,8 +264,7 @@ async def send_setu(bot, ev):
 	await bot.send(ev, msg)
 
 
-@sv.on_rex(r'^[色涩瑟][图圖]$|^[来來发發给給]((?P<num>\d+)|(?:.*))[张張个個幅点點份丶](?P<keyword>.*?)[色涩瑟][图圖]$')
-@sv.on_fullmatch("不够涩")
+@sv.on_rex(r'^不够[色瑟铯涩]|^[色涩瑟][图圖]$|^[来來发發给給]((?P<num>\d+)|(?:.*))[张張个個幅点點份丶](?P<keyword>.*?)[色涩瑟][图圖]$')
 async def send_search_setu(bot, ev):
 	uid = ev['user_id']
 	gid = ev['group_id']

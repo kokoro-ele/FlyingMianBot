@@ -84,6 +84,7 @@ async def query_ranking(date: str, page: int) -> dict:
 		async with aiohttp.ClientSession(headers=acggov_headers) as session:
 			async with session.get(url, params=params) as resp:
 				data = await resp.json(content_type='application/json')
+				print(data)
 				hoshino.logger.info(f'[INFO]查询排行榜成功')
 				ranking_list[date][page] = data
 	except Exception as e:
