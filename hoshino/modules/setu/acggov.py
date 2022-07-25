@@ -252,7 +252,7 @@ async def download_pixiv_image(url: str, id):
 	}
 	try:
 		async with aiohttp.ClientSession(headers=headers) as session:
-			async with session.get(url, proxy=get_config('acggov', 'pixiv_proxy'), ) as resp:
+			async with session.get(url) as resp:
 				data = await resp.read()
 				# 转jpg
 				byte_stream = io.BytesIO(data)
