@@ -1,7 +1,6 @@
 import random
 import asyncio
 from datetime import datetime
-from winsound import MB_ICONQUESTION
 import hoshino
 from hoshino import Service
 from hoshino.modules.groupmaster.anti_lex import hour_call
