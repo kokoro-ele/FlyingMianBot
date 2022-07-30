@@ -1,24 +1,32 @@
 import random
 import asyncio
 from datetime import datetime
+from winsound import MB_ICONQUESTION
 import hoshino
 from hoshino import Service
+from hoshino.modules.groupmaster.anti_lex import hour_call
 from .base import format_setu_msg
-from .lolicon import lolicon_search_setu
+from .lolicon import get_setu_online
+from .acggov import acggov_search_setu
 from .config import get_config, get_group_config
 from . import send_msg
 from .base import search_setu
 sv_help= '''
-setu set day/night xxx
+启用请联系维护者
 '''
 sv = Service('每日一涩', enable_on_default=False, help_=sv_help)
+sv18 = Service('每日一涩r18', enable_on_default=False, help_=sv_help)
 
-async def get_img(keyword):
+
+async def get_img(keyword,mode):
     num = 1
     msg_list = []
     timg_List = []
     while len(msg_list) == 0:
-        timg_List = await lolicon_search_setu(keyword, 0, num)
+        if(mode == 1):
+            timg_List = await get_setu_online(1, 1)
+        if(mode == 0):
+            timg_List = await acggov_search_setu(keyword,num)    
         timg = timg_List[0]
         if timg['id'] != 0:
             msg = format_setu_msg(timg)
@@ -38,6 +46,15 @@ async def get_img(keyword):
         })
     return forward_msg
 
+@sv18.scheduled_job('cron', hour='*/2')
+async def day():
+    forward_msg = await get_img('萝莉',1)
+    try:
+        await asyncio.sleep(0.8)
+        await sv.broadcast('我先放盒纸巾在这里.jpg', 'r18 setu message')
+        await sv.broadcast_forward(forward_msg, TAG = 'r18')
+    except:   
+        await sv.broadcast('太涩了发不出去捏', 'day setu message')
 @sv.scheduled_job('cron', hour="7",minute="00")
 async def day():
     forward_msg = await get_img('白丝')

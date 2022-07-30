@@ -4,6 +4,7 @@ from nonebot import on_command, CommandSession
 from nonebot import permission as perm
 from sqlalchemy import null
 
+
 from sogou_tr.sogou_tr import sogou_tr
 from datetime import datetime, timedelta
 
@@ -66,7 +67,9 @@ async def get_translation(text: str,tolang: str) -> str:
     else:
         get_translation.cdtime = datetime.now() + timedelta(seconds=1)
         try:
+            print(text)
             ret = sogou_tr(text,to_lang = tolang)
+            print(ret)
             # print(sogou_tr.json)
             return ret
         except:

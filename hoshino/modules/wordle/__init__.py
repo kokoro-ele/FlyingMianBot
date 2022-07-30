@@ -36,7 +36,7 @@ HELP_MSG1 = '''
 '''
 HELP_MSG2 = f"支持的词典：{'、'.join(dic_list)}"
 HELP_MSG = HELP_MSG1+HELP_MSG2
-sv = hoshino.Service('猜单词',visible = True,enable_on_default=True, help_=HELP_MSG)
+sv = Service('猜单词',visible = True,enable_on_default=True, help_=HELP_MSG)
 
 # parser = ArgumentParser("wordle", description="猜单词")
 # parser.add_argument("-l", "--length", type=int, default=5, help="单词长度")
