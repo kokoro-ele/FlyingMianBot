@@ -312,7 +312,8 @@ async def picfinder(bot, ev, image_data):
     #await bot.send_private_msg(self_id=ev.self_id, user_id=bot.config.SUPERUSERS[0], message=image_data_report)
     chain = await chain_reply(bot, ev, chain, image_data_report)
     if float(simimax) > float(threshold):
-        lmtd.increase(uid)
+        pass
+        #lmtd.increase(uid)
     else:
         if simimax != 0:
             chain = await chain_reply(bot, ev, chain, "相似度过低，换用ascii2d检索中…")
@@ -323,7 +324,7 @@ async def picfinder(bot, ev, image_data):
         image_data_report = await get_image_data_ascii(image_data)
         if image_data_report[0]:
             chain = await chain_reply(bot, ev, chain, image_data_report[0])
-            lmtd.increase(uid)
+            #lmtd.increase(uid)
         if image_data_report[1]:
             chain = await chain_reply(bot, ev, chain, image_data_report[1])
         if not (image_data_report[0] or image_data_report[1]):

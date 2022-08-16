@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 # print(sogou_tr('hello world', to_lang='ja'))  # ->'ハローワールド'
 
 
-@on_command('translate', aliases=('翻译', '翻譯', '翻訳'), permission=perm.GROUP_ADMIN, only_to_me=False)
+@on_command('translate', aliases=('翻译', '翻譯', '翻訳'), only_to_me=False)
 async def translate(session: CommandSession):
     if session.state['success'] == 0:
         await session.send('缺少语言种类或文本哦！')

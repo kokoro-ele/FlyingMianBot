@@ -1,6 +1,8 @@
 # Config Files
 config.py
 config.json
+grouplist.json
+groupconfig.json
 hoshino/config/
 local_coolq_config/
 
