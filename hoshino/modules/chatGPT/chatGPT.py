@@ -2,6 +2,7 @@ from hoshino import Service, priv
 import asyncio
 from revChatGPT.revChatGPT import Chatbot
 import time
+import random
 
 config = {
         "Authorization": "<Your Bearer Token Here>", # This is optional
@@ -46,6 +47,14 @@ def get_chat_response(session_id, prompt):
     except Exception as e:
         return f"发生错误: {str(e)}"
  
+@sv.on_message()
+async def random_resp(bot, ev):
+    if(random.random() < 0.2):
+        sv.logger.info(
+        f"Message {ev.message_id} triggered 'random_resp'"
+    )
+        await chatGPT_method(bot,ev)
+
 
 @sv.on_prefix(("gpt"))
 async def chatGPT_method(bot, ev): 
