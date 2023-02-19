@@ -1,0 +1,6 @@
+[submodule "hoshino/modules/maimaiDX"]
+	path = hoshino/modules/maimaiDX
+	url = https://github.com/kokoro-ele/maimaiDX.git
+[submodule "hoshino/modules/setu"]
+	path = hoshino/modules/setu
+	url = https://github.com/kokoro-ele/setu4hoshino.git
