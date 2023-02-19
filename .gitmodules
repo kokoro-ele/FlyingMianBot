@@ -4,3 +4,6 @@
 [submodule "hoshino/modules/setu"]
 	path = hoshino/modules/setu
 	url = https://github.com/kokoro-ele/setu4hoshino.git
+[submodule "hoshino/modules/picfinder"]
+	path = hoshino/modules/picfinder
+	url = https://github.com/kokoro-ele/picfinder_take
