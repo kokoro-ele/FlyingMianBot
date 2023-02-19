@@ -33,6 +33,7 @@ XXXmaimaiXXX什么 随机一首歌
 分数线 <难度+歌曲id> <分数线> 详情请输入“分数线 帮助”查看
 开启/关闭mai猜歌 开关猜歌功能
 猜歌 顾名思义，识别id，歌名和别名
+minfo<@> <id/别称/曲名> 查询单曲成绩
 b40 <名字> 或 @某人 查B40
 b50 <名字> 或 @某人 查B50
 我要(在<难度>)上<分数>分 <名字> 或 @某人 查看推荐的上分乐曲
@@ -53,11 +54,11 @@ b50 <名字> 或 @某人 查B50
 
 SV_HELP = '请使用 帮助maimaiDX 查看帮助'
 
-sv = Service('maimaiDX', manage_priv=priv.ADMIN, enable_on_default=True, help_=SV_HELP)
+sv = Service('maimaiDX', manage_priv=priv.ADMIN, enable_on_default=False, help_=SV_HELP)
 
 def random_music(music: Music) -> str:
     msg = f'''{music.id}. {music.title}
-{MessageSegment.image(f"https://www.diving-fish.com/covers/{get_cover_len4_id(music.id)}.png")}
+{MessageSegment.image(f'https://www.diving-fish.com/covers/{get_cover_len4_id(music.id)}.png')}
 {'/'.join(list(map(str, music.ds)))}'''
     return msg
 
@@ -210,7 +211,7 @@ async def search_dx_song_charter(bot: NoneBot, ev: CQEvent):
     msg += f'第{page}页，共{len(music_data) // SONGS_PER_PAGE + 1}页'
     await bot.send(ev, MessageSegment.image(image_to_base64(text_to_image(msg.strip()))), at_sender=True)
 
-@sv.on_rex(r'^随个((?:dx|sd|标准))?([绿黄红紫白]?)([0-9]+\+?)$')
+@sv.on_rex(r'^[随来给]个((?:dx|sd|标准))?([绿黄红紫白]?)([0-9]+\+?)$')
 async def random_song(bot: NoneBot, ev: CQEvent):
     try:
         match: Match[str] = ev['match']
@@ -259,7 +260,7 @@ async def search_song(bot: NoneBot, ev: CQEvent):
 @sv.on_rex(r'^([绿黄红紫白]?)\s?id\s?([0-9]+)$')
 async def query_chart(bot: NoneBot, ev: CQEvent):
     match: Match[str] = ev['match']
-    msg = query_chart_data(match)
+    msg = await query_chart_data(match)
 
     await bot.send(ev, msg, at_sender=True)
 
@@ -324,14 +325,16 @@ async def how_song(bot: NoneBot, ev: CQEvent):
 
 @sv.on_rex(r'^(.+)\s?(添加|增加|增添|删除|删去|去除)别(称|名)\s?(.+)$')
 async def add_aliase(bot: NoneBot, ev: CQEvent):
-    match: Match[str] = ev['match']
-    is_ad = priv.check_priv(ev, priv.ADMIN)
-    if not is_ad:
-        await bot.finish(ev, '仅允许管理员修改歌曲别名')
-    name = match.group(1).strip().lower()
+    try:
+        match: Match[str] = ev['match']
+        is_ad = priv.check_priv(ev, priv.ADMIN)
+        if not is_ad:
+            await bot.finish(ev, '仅允许管理员修改歌曲别名')
+        name = match.group(1).strip().lower()
 
-    msg = aliases(name, match)
-    await bot.send(ev, msg, at_sender=True)
+        msg = aliases(name, match)
+        await bot.send(ev, msg, at_sender=True)
+    except: pass
 
 @sv.on_prefix('分数线')
 async def quert_score(bot: NoneBot, ev: CQEvent):
@@ -396,6 +399,37 @@ async def best_40(bot: NoneBot, ev: CQEvent):
 
     data = await generate(payload)
 
+    await bot.send(ev, data, at_sender=True)
+
+@sv.on_prefix(['minfo'])
+async def maiinfo(bot: NoneBot, ev: CQEvent):
+    qqid = ev.user_id
+    song: str = ev.message.extract_plain_text().strip()
+    for i in ev.message:
+        if i.type == 'at' and i.data['qq'] != 'all':
+            qqid = int(i.data['qq'])
+    if not song:
+        await bot.finish(ev, '请输入曲目id或曲名', at_sender=True)
+
+    payload = {
+        'qq': qqid,
+        'version': list(set(version for version in plate_to_version.values()))
+    }
+
+    if song.isdigit() and song not in ['9', '135']:
+        if music := mai.total_list.by_id(song):
+            id = music.id
+        else:
+            await bot.finish(ev, '未找到曲目', at_sender=True)
+    elif song in mai.music_aliases:
+        result = mai.music_aliases[song][0]
+        id = mai.total_list.by_title(result).id
+    else:
+        await bot.finish(ev, '未找到曲目', at_sender=True)
+    
+    data = await music_play_data(payload, id)
+    if not data:
+        data = '您未游玩该曲目'
     await bot.send(ev, data, at_sender=True)
 
 @sv.on_rex(r'^我要在?([0-9]+\+?)?上([0-9]+)分\s?(.+)?')  # 慎用，垃圾代码非常吃机器性能
@@ -770,15 +804,17 @@ async def search_arcade(bot: NoneBot, ev: CQEvent):
 
 @sv.on_rex(r'^(.+)?\s?(设置|设定|＝|=|增加|添加|加|＋|\+|减少|降低|减|－|-)\s?([0-9]+|＋|\+|－|-)(人|卡)?$')
 async def arcade_person(bot: NoneBot, ev: CQEvent):
-    match: Match[str] = ev['match']
-    gid = ev.group_id
-    nickname = ev.sender['nickname']
-    if not match.group(3).isdigit() and match.group(3) not in ['＋', '+', '－', '-']:
-        await bot.finish(ev, '请输入正确的数字', at_sender=True)
+    try:
+        match: Match[str] = ev['match']
+        gid = ev.group_id
+        nickname = ev.sender['nickname']
+        if not match.group(3).isdigit() and match.group(3) not in ['＋', '+', '－', '-']:
+            await bot.finish(ev, '请输入正确的数字', at_sender=True)
 
-    msg = arcade_person_data(match, gid, nickname)
+        msg = arcade_person_data(match, gid, nickname)
 
-    await bot.send(ev, msg, at_sender=True)
+        await bot.send(ev, msg, at_sender=True)
+    except: pass
 
 @sv.on_suffix(['有多少人', '有几人', '有几卡', '多少人', '多少卡', '几人', 'jr', '几卡'])
 async def arcade_query_person(bot: NoneBot, ev: CQEvent):

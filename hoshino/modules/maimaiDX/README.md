@@ -10,14 +10,17 @@
 
 请勿删除目录下现有的 `static/aliases.csv` 别名文件，静态压缩文件不再有该文件。
 
-如果您不小心删除了，可以单独下载别名文件 [aliases.csv](https://cloudreve.yuzuai.xyz/api/v3/file/get/1819/aliases.csv?sign=VNk5o7WR5mG7BF9yzC0deNsihBZEqv0Wnog9EzLlR5U%3D%3A0)
+如果您不小心删除了，可以单独下载别名文件 [aliases.csv](https://cloud.yuzuai.xyz/api/v3/file/get/1819/aliases.csv?sign=VNk5o7WR5mG7BF9yzC0deNsihBZEqv0Wnog9EzLlR5U%3D%3A0)
 
 ## 使用方法
 
 1. 将该项目放在HoshinoBot插件目录 `modules` 下，或者clone本项目 `git clone https://github.com/Yuri-YuzuChaN/maimaiDX`
+
+> 如果不需要机厅功能，请clone分支 `git clone -b del-arcade https://github.com/Yuri-YuzuChaN/maimaiDX`
+
 2. 下载静态资源文件，将该压缩文件解压至插件根目录，即 `maimaiDX/static` 并覆盖，[下载链接](https://www.diving-fish.com/maibot/static.zip)
-3. 下载别名文件 [aliases.csv](https://cloudreve.yuzuai.xyz/api/v3/file/get/1819/aliases.csv?sign=VNk5o7WR5mG7BF9yzC0deNsihBZEqv0Wnog9EzLlR5U%3D%3A0)，并解压至 `static` 目录下，即 `maimaiDX/static/aliases.csv`
-4. pip以下依赖：`pillow`, `retrying`
+3. 下载别名文件 [aliases.csv](https://cloud.yuzuai.xyz/api/v3/file/get/1819/aliases.csv?sign=VNk5o7WR5mG7BF9yzC0deNsihBZEqv0Wnog9EzLlR5U%3D%3A0)，并解压至 `static` 目录下，即 `maimaiDX/static/aliases.csv`
+4. pip以下依赖：`pillow`, `retrying`, `aiofiles`
 5. 在`config/__bot__.py`模块列表中添加 `maimaiDX`
 6. 重启HoshinoBot
 
@@ -41,6 +44,7 @@
 | 定数查歌 <定数> 定数查歌 <定数下限> <定数上限>                   | 查询定数对应的乐曲       |
 | 分数线 <难度+歌曲id> <分数线>                            | 展示歌曲的分数线        |
 | 开启/关闭mai猜歌                                     | 开关猜歌功能          |
+| minfo<@> <id/别称/曲名>                           | 查询单曲成绩              |
 | b40 <游戏名>                                      | 查询b40           |
 | b50 <游戏名>                                      | 查询b50           |
 | 我要在<难度>上<分数>分 <游戏名>                            | 查看推荐的上分乐曲       |
@@ -60,6 +64,18 @@
 | <名称>人数设置,设定,增加,加,+,减少,减,-<人数>                  | 操作排卡人数          |
 | <名称>有多少人,有几人,有几卡,几人,几卡                         | 查看排卡人数          |
 
+## 同步别称文件（临时）
+
+1. 打开[fufubot歌曲别名表](https://docs.qq.com/sheet/DVnJUb0pYeXJxakVk?tab=BB08J3&_t=1676626810168)并登录腾讯文档
+2. 打开浏览器控制台 点击NetWork栏
+3. 在filter内填入doc_info
+4. 拷贝Request Headers中cookie值至[_update_aliases.py](_update_aliases.py) line 10 `cookie_value` 变量处
+5. **重要：关闭hoshino**，运行`python _update_aliases.py`  
+
+* 参考[python爬虫系列之下载在线文档Excel(腾讯)](https://blog.csdn.net/qq_45731111/article/details/124994682)  
+* **更新前请做好备份**，防止误操作导致数据丢失
+* 该功能不会覆盖原有别称信息
+
 ## 批量更新机厅
 
 1. 在舞萌DX官方微信中点击资讯->店铺分布
@@ -67,10 +83,42 @@
 3. 删除 [_update_arcades.py](_update_arcades.py) line 4下原有内容，并将复制的内容粘贴到这里
 4. 删除头部`所选地区：[  ▼]（店铺数：xxx）`以及尾部`©SEGA. All rights reserved. ©DWANGO Co., Ltd."VOCALOID" and "VOCALO" are trademarks of Yamaha Corporation.`字样
 5. **重要：关闭hoshino**，运行`python _update_arcades.py`  
-ps: 更新前请做好备份，防止误操作导致数据丢失  
-pps: 该功能不会覆盖原有机厅信息
+* **更新前请做好备份**，防止误操作导致数据丢失
+* 该功能不会覆盖原有机厅信息
 
 ## 更新说明
+
+**2023-2-18**
+
+1. 别称同步临时解决方案 #47
+
+**2023-2-15**
+
+1. 更新本地缓存水鱼网数据 #43
+
+**2022-9-14**
+
+1. 新增查询单曲指令 `minfo`
+2. 修改查曲绘图
+
+**2022-8-30**
+
+1. 修复新版b40/b50 isinstance bug [#38](https://github.com/Yuri-YuzuChaN/maimaiDX/issues/38)
+2. 修复新版b40/b50 找不到图片问题
+3. 修复安慰分隐性bug
+
+**2022-08-27**
+
+1. 修复b40/b50小数点后四位错误的问题
+
+**2022-08-25**
+
+1. 修复猜歌模块发送曲绘时为未知曲绘的问题
+
+**2022-08-16**
+
+1. 修改 `b40/b50` 指令绘图，如不喜欢请将 `libraries/maimaidx_project.py` 第`6`行 `maimai_best_50` 改成 `maimai_best_40`
+2. 修改查曲绘图
 
 **2022-07-11**
 
