@@ -5,8 +5,7 @@ hoshino/config/
 local_coolq_config/
 activate
 
-#modules
-hoshino/modules/
+
 
 # Database
 db.json
