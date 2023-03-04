@@ -7,3 +7,6 @@
 [submodule "hoshino/modules/picfinder"]
 	path = hoshino/modules/picfinder
 	url = https://github.com/kokoro-ele/picfinder_take
+[submodule "hoshino/modules/chatgpt"]
+	path = hoshino/modules/chatgpt
+	url = https://github.com/kokoro-ele/ChatGPT4Hoshino.git
